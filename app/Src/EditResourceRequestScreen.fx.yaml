@@ -1,0 +1,390 @@
+"EditResourceRequestScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(237, 237, 237, 1)
+    OnVisible: |-
+        =Concurrent(
+            ClearCollect(
+                colDepartments,
+                ShowColumns(
+                    Departments,"DepartmentName","ID"
+                   
+                )
+            ),
+            ClearCollect(
+                colJobRoles,
+                ShowColumns(
+                    JobRole,
+                    "Role","ID"
+                )
+            ),
+              ClearCollect(
+                colEmpType,
+                ShowColumns(
+                    Employment,
+                   "EmploymentType","ID"
+                )
+            ),
+            Set(dataSaved,false)
+        )
+
+    NewResourceRequestCanvas_1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        ZIndex: =1
+
+        DataCard4_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1366
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        DataCard5_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1366
+            X: =0
+            Y: =1
+            ZIndex: =3
+
+            Label1_11 As label:
+                Text: ="Department"
+                Width: =237
+                X: =34
+                Y: =46
+                ZIndex: =3
+
+            drpDepartment_1 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(0, 18, 107, 1)
+                Default: =
+                Items: =colDepartments
+                Width: =320
+                X: =299
+                Y: =46
+                ZIndex: =4
+
+            Label1_12 As label:
+                Text: ="Sub-Department"
+                Width: =237
+                X: =672
+                Y: =46
+                ZIndex: =5
+
+            drpSubDepartment_1 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(0, 18, 107, 1)
+                Default: =
+                Items: =ShowColumns(Filter(SubDepartments,DepartmentName.Value=drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'),"SubDepartmentName","ID")
+                Width: =405
+                X: =927
+                Y: =46
+                ZIndex: =6
+
+        DataCard6_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1366
+            X: =0
+            Y: =2
+            ZIndex: =4
+
+            Label1_14 As label:
+                Text: ="Employee Type"
+                Width: =237
+                X: =672
+                Y: =45
+                ZIndex: =3
+
+            drpEmployeeType_1 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(0, 18, 107, 1)
+                Default: =
+                Items: =colEmpType
+                Width: =405
+                X: =927
+                Y: =45
+                ZIndex: =4
+
+            Label1_13 As label:
+                Text: ="Job Role"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =5
+
+            drpRole_1 As dropdown:
+                ChevronBackground: =RGBA(0, 18, 107, 1)
+                Default: =
+                Items: =JobRole
+                Width: =320
+                X: =299
+                Y: =40
+                ZIndex: =6
+
+        DataCard7_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1366
+            X: =0
+            Y: =3
+            ZIndex: =5
+
+            Label1_15 As label:
+                Text: ="Project Specific Hiring"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            chkProjectSpecHiring_1 As checkbox:
+                Height: =40
+                Text: ="Yes/No"
+                X: =299
+                Y: =45
+                ZIndex: =2
+
+            Label1_16 As label:
+                Text: ="Project Name"
+                Width: =237
+                X: =664
+                Y: =40
+                ZIndex: =3
+
+            txtProjectName_1 As text:
+                Default: =
+                Width: =405
+                X: =927
+                Y: =40
+                ZIndex: =4
+
+        DataCard8_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =272
+            Width: =1366
+            X: =0
+            Y: =4
+            ZIndex: =6
+
+            Label1_17 As label:
+                Text: ="Job Description"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            DataCardValue12_4 As attachments:
+                BorderColor: =
+                DisplayMode: =Parent.DisplayMode
+                Height: =210
+                IsInDataCard: =true
+                Items: =
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: ="Upload files"
+                Width: =921
+                X: =305
+                Y: =27
+                ZIndex: =2
+
+        DataCard10_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =275
+            Width: =1366
+            X: =0
+            Y: =6
+            ZIndex: =8
+
+            Label1_18 As label:
+                Text: ="Manager Approval"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            DataCardValue12_5 As attachments:
+                BorderColor: =
+                DisplayMode: =Parent.DisplayMode
+                Height: =210
+                IsInDataCard: =true
+                Items: =
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Tooltip: ="Upload files"
+                Width: =921
+                X: =299
+                Y: =30
+                ZIndex: =2
+
+        DataCard11_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =237
+            Width: =1366
+            X: =0
+            Y: =7
+            ZIndex: =9
+
+            Label1_19 As label:
+                Text: ="Comments"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            txtComments_1 As text:
+                Default: =
+                Height: =130
+                Mode: =TextMode.MultiLine
+                Width: =921
+                X: =299
+                Y: =40
+                ZIndex: =2
+
+        DataCard12_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =1
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =237
+            Width: =1366
+            X: =0
+            Y: =8
+            ZIndex: =10
+
+            Label1_20 As label:
+                Text: ="Request History"
+                Width: =237
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+            txtReqHistory_1 As text:
+                Default: =
+                Height: =130
+                Mode: =TextMode.MultiLine
+                Width: =921
+                X: =299
+                Y: =40
+                ZIndex: =2
+
+        DataCard13_1 As dataCard.blankCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =100
+            Width: =1366
+            X: =0
+            Y: =9
+            ZIndex: =11
+
+            btnSubmit_1 As button:
+                Fill: =RGBA(99, 139, 44, 1)
+                Height: =50
+                HoverFill: =ColorFade(Self.Fill, -20%)
+                Text: ="Submit"
+                X: =768
+                Y: =30
+                ZIndex: =1
+
+            btnCancel_1 As button:
+                Fill: =RGBA(172, 62, 11, 1)
+                Height: =50
+                HoverFill: =ColorFade(Self.Fill, -20%)
+                Text: ="Button"
+                X: =987
+                Y: =30
+                ZIndex: =2
+
+            btnSave_1 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =50
+                HoverFill: =ColorFade(Self.Fill, -20%)
+                OnSelect: |-
+                    =Set(dataSaved,!dataSaved);
+                    UpdateContext({reqNo:"IS"&RandBetween(1000,9999)});
+                    If(IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            Id:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                            Value:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'},
+                                            SubDepartment:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            Id:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                            Value:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'},
+                                            Role:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            Id:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                            Value:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'},
+                                            'Employment Type':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            Id:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                            Value:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'},
+                                            ProjectSpecificHiring:chkProjectSpecHiring_1.Value,
+                                            ProjectName:txtProjectName_1.Text,
+                                            RequestStatus:"Draft",
+                                            Comments:txtComments_1.Text,
+                                            RequestHistory:txtReqHistory_1.Text
+                                  });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),)
+                Text: ="Save"
+                X: =552
+                Y: =30
+                ZIndex: =3
+
+    HeaderComponent_3 As HeaderComponent:
+        AppName: ="Resource Request"
+        UserName: =User().FullName
+        ZIndex: =2
+
+    LoadingMask_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(18,19,20,0.5)
+        Height: =App.Height
+        Visible: =dataSaved
+        Width: =App.Width
+        ZIndex: =3
+
+        LoadingContent_1 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =65
+            Width: =735
+            X: =376
+            Y: =372
+            ZIndex: =1
+
+        Label1_21 As label:
+            Align: =Align.Center
+            Height: =42
+            Text: ="Please wait till saving your data..."
+            Width: =442
+            X: =545
+            Y: =384
+            ZIndex: =2
+
