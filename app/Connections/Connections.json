@@ -1,0 +1,93 @@
+{
+  "2dbecf2e-9ec8-4005-98ba-e2416ec0ef65": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {
+          "value": "c63672fd-6b66-ee11-9ae7-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "ea9740ab-a861-409a-a716-5e1433d82e78"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+        },
+        "workflowEntityId": {
+          "value": "c63672fd-6b66-ee11-9ae7-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "ea9740ab-a861-409a-a716-5e1433d82e78"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+    },
+    "dependents": [],
+    "id": "2dbecf2e-9ec8-4005-98ba-e2416ec0ef65"
+  },
+  "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3432/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://inva11.sharepoint.com/sites/InvaDev": {
+        "dataSources": {
+          "Departments": {
+            "tableName": "3db1150a-c440-4d34-b7ef-0859459d6ed3"
+          },
+          "Employment": {
+            "tableName": "57a570f9-f366-4983-be86-f29e67817e20"
+          },
+          "JobRole": {
+            "tableName": "2192d72c-9ed7-47d1-8bcd-4bef75a3ad7b"
+          },
+          "ManagerApproval": {
+            "tableName": "f8b8c197-3f3f-488c-9a78-cdf42525b797"
+          },
+          "ResourceRequest": {
+            "tableName": "546937d7-7908-41c3-a115-75d324aef695"
+          },
+          "SubDepartments": {
+            "tableName": "965a61f8-ffa9-4aa5-a202-d65e64547a9b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ResourceRequest",
+      "Employment",
+      "JobRole",
+      "ManagerApproval",
+      "SubDepartments",
+      "Departments"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "2dbecf2e-9ec8-4005-98ba-e2416ec0ef65"
+    ],
+    "id": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+  }
+}

@@ -1,0 +1,25 @@
+"HomeScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    HomeCanvas As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height - 100
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    HeaderComponent_1 As HeaderComponent:
+        AppName: ="Resource Request"
+        UserName: =User().FullName
+        ZIndex: =4
+
