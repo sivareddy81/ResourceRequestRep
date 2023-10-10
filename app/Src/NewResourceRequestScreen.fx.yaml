@@ -162,6 +162,7 @@
 
             Label1_7 As label:
                 Text: ="Project Name"
+                Visible: =chkProjectSpecHiring.Value=true
                 Width: =237
                 X: =664
                 Y: =40
@@ -169,6 +170,7 @@
 
             txtProjectName As text:
                 Default: =
+                Visible: =chkProjectSpecHiring.Value=true
                 Width: =405
                 X: =927
                 Y: =40
