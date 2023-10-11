@@ -255,7 +255,7 @@
                     ZIndex: =5
 
                 Container1 As groupContainer.manualLayoutContainer:
-                    Fill: =RGBA(215, 223, 240, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
                     Height: =157
                     Width: =209
                     X: =166
@@ -263,7 +263,7 @@
                     ZIndex: =6
 
                     Image1 As image:
-                        X: =46
+                        X: =59
                         Y: =10
                         ZIndex: =1
 
@@ -294,7 +294,7 @@
                         Size: =12
                         Text: ="New Request"
                         Tooltip: ="Click here to submit New CAPEX Request"
-                        Width: =140
+                        Width: =150
                         X: =26
                         Y: =122
                         ZIndex: =2
@@ -306,7 +306,7 @@
                         Icon: =Icon.Add
                         PaddingLeft: =5
                         Width: =20
-                        X: =31
-                        Y: =119
+                        X: =28
+                        Y: =128
                         ZIndex: =3
 
