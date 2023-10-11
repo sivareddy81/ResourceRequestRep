@@ -195,12 +195,14 @@
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue12_3 As attachments:
+            DataCardValue_JD As attachments:
                 BorderColor: =
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
                 Items: =
+                MaxAttachments: =1
+                MaxAttachmentSize: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
@@ -337,8 +339,9 @@
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
                     =Set(dataSaved,!dataSaved);
+                    Set(msgText,"Please wait till saving your data...");
                     UpdateContext({reqNo:"IS"&RandBetween(1000,9999)});
-                    If(IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                    If(IsError(UpdateContext({recentItem:Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                             Value:drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'},
                                             SubDepartment:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
@@ -355,7 +358,10 @@
                                             RequestStatus:"Draft",
                                             Comments:txtComments.Text,
                                             RequestHistory:txtReqHistory.Text
-                                  });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),)
+                                  })});Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,{
+                             contentBytes: First(DataCardValue_JD.Attachments).Value,
+                             name: First(DataCardValue_JD.Attachments).Name
+                         })),Set(dataSaved,!dataSaved);Set(msgText,"Item was not saved,please check your data once"),Set(msgText,"Item was save successfully."))
                 Text: ="Save"
                 X: =552
                 Y: =30
@@ -381,10 +387,10 @@
             Y: =372
             ZIndex: =1
 
-        Label1 As label:
+        lblMsg As label:
             Align: =Align.Center
             Height: =42
-            Text: ="Please wait till saving your data..."
+            Text: =msgText
             Width: =442
             X: =545
             Y: =384
