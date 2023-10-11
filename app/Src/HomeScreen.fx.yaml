@@ -9,11 +9,11 @@
         DataCard1 As dataCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
-            BorderThickness: =0
+            BorderThickness: =1
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =Parent.Height - 100
-            Width: =Parent.Width
+            Width: =1350
             X: =0
             Y: =0
             ZIndex: =1
@@ -92,88 +92,94 @@
                 Height: =53
                 Icon: =Icon.Add
                 OnSelect: =Navigate(NewResourceRequestScreen,ScreenTransition.None);
+                Tooltip: ="Add Resource"
                 Width: =87
                 X: =1223
                 Y: =110
                 ZIndex: =7
 
+            GalleryResourceReqests As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =381
+                Items: =colGalHomeScreen
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplateSize: =56
+                Width: =1366
+                Y: =163
+                ZIndex: =8
+
+                lblDeprmnt As label:
+                    Align: =Align.Center
+                    BorderThickness: =1
+                    Height: =56
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Department.Value
+                    Width: =231
+                    ZIndex: =1
+
+                lblSubDep As label:
+                    Align: =Align.Center
+                    BorderThickness: =1
+                    Height: =56
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.SubDepartment.Value
+                    Width: =229
+                    X: =231
+                    ZIndex: =2
+
+                lblDeprmnt_2 As label:
+                    Align: =Align.Center
+                    BorderThickness: =1
+                    Height: =56
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.'Employment Type'.Value
+                    Width: =255
+                    X: =460
+                    ZIndex: =3
+
+                lblDeprmnt_3 As label:
+                    Align: =Align.Center
+                    BorderThickness: =1
+                    Height: =56
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Role.Value
+                    Width: =271
+                    X: =715
+                    ZIndex: =4
+
+                lblDeprmnt_4 As label:
+                    Align: =Align.Center
+                    BorderThickness: =1
+                    Height: =56
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.RequestStatus
+                    Width: =232
+                    X: =986
+                    ZIndex: =5
+
+                Icon3 As icon.View:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =30
+                    Icon: =Icon.Edit
+                    OnSelect: =Select(Parent)
+                    Width: =30
+                    X: =1290
+                    Y: =6
+                    ZIndex: =6
+
+                Icon4 As icon.View:
+                    Height: =30
+                    Icon: =Icon.View
+                    OnSelect: =Select(Parent)
+                    Width: =30
+                    X: =1238
+                    Y: =6
+                    ZIndex: =7
+
     HeaderComponent_1 As HeaderComponent:
         AppName: ="Resource Request"
         UserName: =User().FullName
         ZIndex: =4
-
-    GalleryResourceReqests As gallery.galleryVertical:
-        DelayItemLoading: =true
-        Height: =515
-        Items: =colGalHomeScreen
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =56
-        Width: =1366
-        Y: =157
-        ZIndex: =5
-
-        lblDeprmnt As label:
-            BorderThickness: =1
-            Height: =58
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Department.Value
-            Width: =231
-            ZIndex: =1
-
-        lblSubDep As label:
-            BorderThickness: =1
-            Height: =58
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.SubDepartment.Value
-            Width: =229
-            X: =231
-            ZIndex: =2
-
-        lblDeprmnt_2 As label:
-            BorderThickness: =1
-            Height: =58
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.'Employment Type'.Value
-            Width: =255
-            X: =460
-            ZIndex: =3
-
-        lblDeprmnt_3 As label:
-            BorderThickness: =1
-            Height: =58
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.Role.Value
-            Width: =271
-            X: =715
-            ZIndex: =4
-
-        lblDeprmnt_4 As label:
-            BorderThickness: =1
-            Height: =58
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.RequestStatus
-            Width: =232
-            X: =986
-            ZIndex: =5
-
-        Icon3 As icon.View:
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =30
-            Icon: =Icon.Edit
-            OnSelect: =Select(Parent)
-            Width: =30
-            X: =1290
-            Y: =6
-            ZIndex: =6
-
-        Icon4 As icon.View:
-            Height: =30
-            Icon: =Icon.View
-            OnSelect: =Select(Parent)
-            Width: =30
-            X: =1238
-            Y: =6
-            ZIndex: =7
 
