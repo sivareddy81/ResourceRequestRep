@@ -549,19 +549,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue12_2.AccessibleLabel"
+                  "fullyQualifiedName": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue_Manager.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue12_2.AccessibleLabel",
+                  "fullyQualifiedName": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue_Manager.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "NewResourceRequestScreen",
-                "type": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue12_2"
+                "type": "NewResourceRequestScreen.NewResourceRequestCanvas.DataCard10.DataCardValue_Manager"
               }
             }
           ],

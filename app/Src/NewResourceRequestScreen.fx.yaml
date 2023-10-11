@@ -232,7 +232,7 @@
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue12_2 As attachments:
+            DataCardValue_Manager As attachments:
                 BorderColor: =
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
@@ -361,7 +361,7 @@
                                   })});Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,{
                              contentBytes: First(DataCardValue_JD.Attachments).Value,
                              name: First(DataCardValue_JD.Attachments).Name
-                         })),Set(dataSaved,!dataSaved);Set(msgText,"Item was not saved,please check your data once"),Set(msgText,"Item was save successfully."))
+                         });ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))),Set(dataSaved,!dataSaved);Set(msgText,"Item was not saved,please check your data once"),Set(msgText,"Item was save successfully."))
                 Text: ="Save"
                 X: =552
                 Y: =30
