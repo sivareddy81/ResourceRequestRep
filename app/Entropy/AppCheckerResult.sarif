@@ -3828,6 +3828,306 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request Status_DataCard1'.DataCardValue9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request Status_DataCard1'.DataCardValue9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request Status_DataCard1'.DataCardValue9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Comments_DataCard1.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Comments_DataCard1.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Comments_DataCard1.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Employment Type_DataCard1'.DataCardValue5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Employment Type_DataCard1'.DataCardValue5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Employment Type_DataCard1'.DataCardValue5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Job Role_DataCard1'.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Job Role_DataCard1'.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Job Role_DataCard1'.DataCardValue6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Specific Hiring_DataCard1'.DataCardValue7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Specific Hiring_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Specific Hiring_DataCard1'.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Name_DataCard1'.DataCardValue8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Name_DataCard1'.DataCardValue8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Project Name_DataCard1'.DataCardValue8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Department_DataCard1.DataCardValue3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Department_DataCard1.DataCardValue3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Department_DataCard1.DataCardValue3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Sub Department_DataCard1'.DataCardValue4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Sub Department_DataCard1'.DataCardValue4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Sub Department_DataCard1'.DataCardValue4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request History_DataCard1'.DataCardValue11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request History_DataCard1'.DataCardValue11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.'Request History_DataCard1'.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Attachments_DataCard1.DataCardValue12.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Attachments_DataCard1.DataCardValue12.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.Form1.Attachments_DataCard1.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Screen3"
                 }
               ],
@@ -4067,6 +4367,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1.Visible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 17
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord.Visible"
                 }
               ],
@@ -4080,6 +4410,36 @@
                 "member": "Visible",
                 "module": "Home Screen",
                 "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 17
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1.Size"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1.Size",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Size",
+                "module": "New Resouce Request",
+                "type": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1"
               }
             }
           ],
