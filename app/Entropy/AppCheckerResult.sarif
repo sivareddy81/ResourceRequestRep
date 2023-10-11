@@ -23,8 +23,45 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 13,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "UpdateContext"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 1,
-                  "charOffset": 1533,
+                  "charOffset": 1549,
                   "snippet": {
                     "text": ")"
                   }
@@ -44,6 +81,83 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadToken",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charOffset": 1551,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Eof",
+              "ParenClose"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 43,
+                  "snippet": {
+                    "text": "UpdateContext"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperatorExpected",
           "ruleIndex": 0
         },
         {
@@ -60,9 +174,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 1534,
+                  "charLength": 5,
+                  "charOffset": 169,
                   "snippet": {
-                    "text": ""
+                    "text": "reqNo"
                   }
                 }
               },
@@ -75,16 +190,15 @@
           ],
           "message": {
             "arguments": [
-              "Eof",
-              "ParenClose"
+              "reqNo"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 1
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -100,9 +214,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 1534,
+                  "charLength": 1359,
+                  "charOffset": 106,
                   "snippet": {
-                    "text": ""
+                    "text": "Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              })"
                   }
                 }
               },
@@ -115,16 +230,15 @@
           ],
           "message": {
             "arguments": [
-              "Eof",
-              "ParenClose"
+              "Patch"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 1
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -140,10 +254,52 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 89,
+                  "charLength": 1310,
+                  "charOffset": 154,
                   "snippet": {
-                    "text": "("
+                    "text": "{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              }"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "RequestNumber",
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1453,
+                  "charOffset": 98,
+                  "snippet": {
+                    "text": "IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              });Set(dataSaved,!dataSaved),Notify(\"Item was not saved,please check your data once\"),))"
                   }
                 }
               },
@@ -165,7 +321,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadArity",
-          "ruleIndex": 2
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -182,7 +338,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 81,
+                  "charOffset": 97,
                   "snippet": {
                     "text": "("
                   }
@@ -206,7 +362,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadArityMinimum",
-          "ruleIndex": 3
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -236,7 +392,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -266,7 +422,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -296,7 +452,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -326,7 +482,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -356,7 +512,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -386,7 +542,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -416,7 +572,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -446,7 +602,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -476,7 +632,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -506,7 +662,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -536,7 +692,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -566,7 +722,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -596,7 +752,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -626,7 +782,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -656,7 +812,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -686,7 +842,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -716,7 +872,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -746,37 +902,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.reqNo"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.reqNo",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "reqNo",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
+          "ruleIndex": 8
         }
       ],
       "tool": {
@@ -784,6 +910,23 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrOperatorExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Expected operator. We expect an operator such as +, *, or & at this point in the formula."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Edit your formula so that it includes an operator between the operands."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "app-ErrBadToken",
               "messageStrings": {
@@ -813,6 +956,51 @@
                 "howToFix": [
                   "Remove or replace the unexpected characters with an expected character."
                 ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidName",
+              "messageStrings": {
+                "issue": {
+                  "text": "Name isn't valid. '{0}' isn't recognized."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or correct the reference to the name that isn't valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidArgs-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrTypeError-Arg-Expected-Found",
+              "messageStrings": {
+                "issue": {
+                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
@@ -861,23 +1049,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "If there's no accessible text, people who can’t see the screen won't understand what’s in images and controls."
-              }
-            },
-            {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unused variable"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove the unused variable."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             }
           ],

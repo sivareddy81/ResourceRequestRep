@@ -337,6 +337,7 @@
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
                     =Set(dataSaved,!dataSaved);
+                    Set(msgText,"")
                     UpdateContext({reqNo:"IS"&RandBetween(1000,9999)});
                     If(IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
@@ -355,7 +356,7 @@
                                             RequestStatus:"Draft",
                                             Comments:txtComments_1.Text,
                                             RequestHistory:txtReqHistory_1.Text
-                                  });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),)
+                                  });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),))
                 Text: ="Save"
                 X: =552
                 Y: =30
