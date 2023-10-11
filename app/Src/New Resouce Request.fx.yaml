@@ -116,10 +116,11 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                Form1 As form:
+                "'New Request Form' As form":
                     DataSource: =ResourceRequest
                     DefaultMode: =FormMode.New
                     Height: =540
+                    NumberOfColumns: =12
                     Width: =1366
                     ZIndex: =1
 
@@ -133,7 +134,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue3.Selected
-                        Width: =455
+                        Width: =Parent.Width/3
                         X: =0
                         Y: =0
                         ZIndex: =2
@@ -199,8 +200,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue4.Selected
-                        Width: =455
-                        X: =1
+                        Width: =Parent.Width/3
+                        X: =4
                         Y: =0
                         ZIndex: =2
 
@@ -219,10 +220,10 @@
                             DefaultSelectedItems: =Parent.Default
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@ResourceRequest].SubDepartment)
+                            Items: =Choices([@ResourceRequest].'Sub Department')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["Value"]
-                            SearchItems: =Choices(ResourceRequest.SubDepartment,DataCardValue4.SearchText)
+                            SearchItems: =Choices(ResourceRequest.'Sub Department',DataCardValue4.SearchText)
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -265,8 +266,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue5.Selected
-                        Width: =455
-                        X: =2
+                        Width: =Parent.Width/3
+                        X: =8
                         Y: =0
                         ZIndex: =2
 
@@ -285,10 +286,10 @@
                             DefaultSelectedItems: =Parent.Default
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@ResourceRequest].Employment_x0020_Type)
+                            Items: =Choices([@ResourceRequest].'Employment Type')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["Value"]
-                            SearchItems: =Choices(ResourceRequest.Employment_x0020_Type,DataCardValue5.SearchText)
+                            SearchItems: =Choices(ResourceRequest.'Employment Type',DataCardValue5.SearchText)
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -331,7 +332,7 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue6.Selected
-                        Width: =455
+                        Width: =Parent.Width/3
                         X: =0
                         Y: =1
                         ZIndex: =2
@@ -351,10 +352,10 @@
                             DefaultSelectedItems: =Parent.Default
                             DisplayFields: =["Value"]
                             DisplayMode: =Parent.DisplayMode
-                            Items: =Choices([@ResourceRequest].Role)
+                            Items: =Choices([@ResourceRequest].'Job Role')
                             PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                             SearchFields: =["Value"]
-                            SearchItems: =Choices(ResourceRequest.Role,DataCardValue6.SearchText)
+                            SearchItems: =Choices(ResourceRequest.'Job Role',DataCardValue6.SearchText)
                             SelectMultiple: =false
                             Tooltip: =Parent.DisplayName
                             Width: =Parent.Width - 60
@@ -397,8 +398,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue7.Value
-                        Width: =455
-                        X: =1
+                        Width: =Parent.Width/3
+                        X: =4
                         Y: =1
                         ZIndex: =2
 
@@ -457,8 +458,8 @@
                         MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "ProjectName")
                         Required: =false
                         Update: =DataCardValue8.Text
-                        Width: =455
-                        X: =2
+                        Width: =Parent.Width/3
+                        X: =8
                         Y: =1
                         ZIndex: =2
 
@@ -514,74 +515,6 @@
                             Y: =DataCardKey8.Y
                             ZIndex: =4
 
-                    "'Request Status_DataCard1' As typedDataCard.textualEditCard":
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="RequestStatus"
-                        Default: =ThisItem.'Request Status'
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ResourceRequest],DataSourceInfo.DisplayName,"RequestStatus")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "RequestStatus")
-                        Required: =false
-                        Update: =DataCardValue9.Text
-                        Width: =455
-                        X: =0
-                        Y: =2
-                        ZIndex: =2
-
-                        DataCardKey9 As label:
-                            AutoHeight: =true
-                            Height: =34
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue9 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey9.Y + DataCardKey9.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage9 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue9.Y + DataCardValue9.Height
-                            ZIndex: =3
-
-                        StarVisible9 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey9.Height
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey9.Y
-                            ZIndex: =4
-
                     Comments_DataCard1 As typedDataCard.textualEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="Comments"
@@ -593,8 +526,8 @@
                         MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "Comments")
                         Required: =false
                         Update: =DataCardValue10.Text
-                        Width: =455
-                        X: =1
+                        Width: =Parent.Width/2
+                        X: =0
                         Y: =2
                         ZIndex: =2
 
@@ -613,6 +546,7 @@
                             Default: =Parent.Default
                             DelayOutput: =true
                             DisplayMode: =Parent.DisplayMode
+                            Height: =150
                             MaxLength: =Parent.MaxLength
                             PaddingLeft: =5
                             RadiusBottomLeft: =0
@@ -650,74 +584,6 @@
                             Y: =DataCardKey10.Y
                             ZIndex: =4
 
-                    "'Request History_DataCard1' As typedDataCard.textualEditCard":
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="RequestHistory"
-                        Default: =ThisItem.'Request History'
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@ResourceRequest],DataSourceInfo.DisplayName,"RequestHistory")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "RequestHistory")
-                        Required: =false
-                        Update: =DataCardValue11.Text
-                        Width: =455
-                        X: =2
-                        Y: =2
-                        ZIndex: =2
-
-                        DataCardKey11 As label:
-                            AutoHeight: =true
-                            Height: =34
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue11 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisplayMode: =Parent.DisplayMode
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey11.Y + DataCardKey11.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage11 As label:
-                            AutoHeight: =true
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue11.Y + DataCardValue11.Height
-                            ZIndex: =3
-
-                        StarVisible11 As label:
-                            Align: =Align.Center
-                            Height: =DataCardKey11.Height
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey11.Y
-                            ZIndex: =4
-
                     Attachments_DataCard1 As typedDataCard.attachmentsEditCard:
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="{Attachments}"
@@ -728,9 +594,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue12.Attachments
-                        Width: =455
-                        X: =0
-                        Y: =3
+                        Width: =Parent.Width/2
+                        X: =4
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey12 As label:
