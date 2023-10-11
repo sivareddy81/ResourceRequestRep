@@ -392,6 +392,11 @@
                                     )
                                 }
                             );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                             contentBytes: First(DataCardValue_JD.Attachments).Value,
+                             name: First(DataCardValue_JD.Attachments).Name
+                         });
+                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
                         ),
                        
                         Set(
