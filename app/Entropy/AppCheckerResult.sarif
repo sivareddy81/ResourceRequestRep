@@ -369,6 +369,2445 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 36,
+                  "snippet": {
+                    "text": "'EV_Capex SharePoint List'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "EV_Capex SharePoint List"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 35,
+                  "charOffset": 28,
+                  "snippet": {
+                    "text": "Refresh('EV_Capex SharePoint List')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Refresh"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 89,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 66,
+                  "snippet": {
+                    "text": "Set(gbl_ItemID,ThisItem.ID)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 30,
+                  "snippet": {
+                    "text": ".'Request Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Request Status"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 78,
+                  "snippet": {
+                    "text": ".'Is Revision'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Is Revision"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 151,
+                  "snippet": {
+                    "text": "frm_NewCapexRequest"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "frm_NewCapexRequest"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 181,
+                  "snippet": {
+                    "text": "'New Capex Request Screen'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "New Capex Request Screen"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": "'EV_Capex SharePoint List'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "EV_Capex SharePoint List"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 35,
+                  "charOffset": 21,
+                  "snippet": {
+                    "text": "Refresh('EV_Capex SharePoint List')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.bttn_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Refresh"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 87,
+                  "snippet": {
+                    "text": ".'Request Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Request Status"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 14,
+                  "charOffset": 187,
+                  "snippet": {
+                    "text": ".'Is Revision'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Is Revision"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 289,
+                  "snippet": {
+                    "text": "frm_NewCapexRequest"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "frm_NewCapexRequest"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 29,
+                  "charOffset": 280,
+                  "snippet": {
+                    "text": "ViewForm(frm_NewCapexRequest)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ViewForm"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 335,
+                  "snippet": {
+                    "text": "'New Capex Request Screen'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "New Capex Request Screen"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Approval Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Approval Status"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 18,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Approval Status'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Approval Status"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 26,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Type of Investment'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Type of Investment"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 21,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Type of Investment'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Type of Investment"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 29,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Business Category'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Business Category"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 28,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Business Category'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Business Category"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 28,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Plant"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Plant"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Plant"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Plant"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 14,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 45,
+                  "snippet": {
+                    "text": ".Country"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Country"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 118,
+                  "snippet": {
+                    "text": ".Country"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Country"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 126,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 66,
+                  "charOffset": 92,
+                  "snippet": {
+                    "text": "Left(\n            ThisItem.Country.Value,\n            24\n        )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Left"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 223,
+                  "snippet": {
+                    "text": ".Country"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Country"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 231,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 214,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": "If(\n    Len(ThisItem.Country.Value) > 24,\n    Concatenate(\n        Left(\n            ThisItem.Country.Value,\n            24\n        ),\n        \"...\"\n    ),\n    //ThisItem.'Test (Test0)'\n    ThisItem.Country.Value\n)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Country"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Country"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 24,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Original One off (K€)'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_OTE_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Original One off (K€)"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 29,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Total Revised One off (K€)'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_OTE_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Total Revised One off (K€)"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Original CER (K€)'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Original CER (K€)"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 20,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Original CER (K€)'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Original CER (K€)"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 42,
+                  "snippet": {
+                    "text": ".'Project Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Project Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 90,
+                  "snippet": {
+                    "text": ".'Project Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Project Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 33,
+                  "charOffset": 77,
+                  "snippet": {
+                    "text": "Left(ThisItem.'Project Name', 25)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Left"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 128,
+                  "snippet": {
+                    "text": ".'Project Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Project Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 117,
+                  "charOffset": 27,
+                  "snippet": {
+                    "text": "If(Len(ThisItem.'Project Name') > 25, Concatenate(Left(ThisItem.'Project Name', 25), \"...\"), ThisItem.'Project Name')"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".'Project Name'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Project Name"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ID_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".ID"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist.lbl_ID_Value"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ID"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 26,
+                  "charOffset": 212,
+                  "snippet": {
+                    "text": "'EV_Capex SharePoint List'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "EV_Capex SharePoint List"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 62,
+                  "charOffset": 205,
+                  "snippet": {
+                    "text": "Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 12,
+                  "charOffset": 239,
+                  "snippet": {
+                    "text": "'Created By'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Created By"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 251,
+                  "snippet": {
+                    "text": ".Email"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 258,
+                  "snippet": {
+                    "text": "gbl_User"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "gbl_User"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 257,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Error",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 268,
+                  "snippet": {
+                    "text": "Created"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Created"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 99,
+                  "charOffset": 200,
+                  "snippet": {
+                    "text": "Sort(Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User),Created,\r\nSortOrder.Descending)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "gbl_varLastRecord"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "gbl_varLastRecord"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.AccessibleLabel"
                 }
               ],
@@ -392,7 +2831,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -422,7 +2861,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -452,7 +2891,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -482,7 +2921,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -512,7 +2951,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -542,7 +2981,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -572,7 +3011,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -602,7 +3041,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -632,7 +3071,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -662,7 +3101,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -692,7 +3131,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -722,7 +3161,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -752,7 +3191,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -782,7 +3221,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -812,7 +3251,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -842,7 +3281,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -872,7 +3311,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -902,7 +3341,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -932,7 +3371,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -962,7 +3401,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -992,7 +3431,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1022,7 +3461,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1052,7 +3491,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -1082,7 +3521,516 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Screen3",
+                "type": "Screen3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Low"
+          },
+          "ruleId": "acc-ReadableScreenNameNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Screen3",
+                "type": "Screen3.gal_CapexRequestlist"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gbl_RequestStatus"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gbl_RequestStatus",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gbl_RequestStatus",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gbl_IsRevision"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gbl_IsRevision",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gbl_IsRevision",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gbl_ItemID"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gbl_ItemID",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gbl_ItemID",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.gbl_Item"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gbl_Item",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gbl_Item",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 15
         },
         {
           "locations": [
@@ -1112,7 +4060,37 @@
             "level": "Medium"
           },
           "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 10
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord.Visible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "Home Screen",
+                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 17
         }
       ],
       "tool": {
@@ -1245,6 +4223,55 @@
               }
             },
             {
+              "id": "app-ErrIncompatibleCtxtVariableTypes",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "acc-AccessibleLabelNeeded",
               "messageStrings": {
                 "issue": {
@@ -1279,6 +4306,57 @@
               }
             },
             {
+              "id": "acc-FocusBorderShouldBeVisible",
+              "messageStrings": {
+                "issue": {
+                  "text": "Focus isn't showing"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Change the FocusedBorderThickness property to be more than 0."
+                ],
+                "level": "Medium",
+                "primaryCategory": "accessibility",
+                "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
+              }
+            },
+            {
+              "id": "acc-ReadableScreenNameNeeded",
+              "messageStrings": {
+                "issue": {
+                  "text": "Revise screen name"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Give the screen  a title that describes what's on the screen or what it's used for."
+                ],
+                "level": "Low",
+                "primaryCategory": "accessibility",
+                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            },
+            {
               "id": "app-CollectDelegatableDataSource",
               "messageStrings": {
                 "issue": {
@@ -1293,6 +4371,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Using the 'Collect' function to create a collection directly from a connected data source may not load every row if the data source is too large."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "Inefficient delay loading"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Use variables, collections, and navigation context to share state across screens instead."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
               }
             }
           ],

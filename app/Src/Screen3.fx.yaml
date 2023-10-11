@@ -1,0 +1,365 @@
+Screen3 As screen:
+
+    gal_CapexRequestlist As gallery.galleryVertical:
+        BorderColor: |-
+            =ColorValue("#F3F2F1")
+        BorderThickness: =1
+        Default: =gbl_varLastRecord
+        DelayItemLoading: =true
+        Fill: |-
+            =ColorValue("#F8F8F8")
+        Height: =628
+        Items: |-
+            =//Sort(Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User),Created,
+            //SortOrder.Descending)
+            //'EV_Capex SharePoint List'
+            //Sort('EV_Capex SharePoint List',Created,SortOrder.Descending)
+            Sort(Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User),Created,
+            SortOrder.Descending)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateFill: |-
+            =//RGBA(0, 0, 0, 0)
+            If(ThisItem.IsSelected,ColorValue("#EDEBE9"),RGBA(0, 0, 0, 0))
+        TemplatePadding: =0
+        TemplateSize: =55
+        Width: =Parent.Width
+        Y: =140
+        ZIndex: =1
+
+        bttn_GallerySelection As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            HoverColor: =Color.Transparent
+            HoverFill: |-
+                =If(ThisItem.IsSelected,RGBA(0, 0, 0, 0),ColorValue("#E8E8E8"))
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =Color.Transparent
+            PressedFill: =Color.Transparent
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: =""
+            Width: =Parent.Width
+            ZIndex: =1
+
+        lbl_ID_Value As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ID
+            Tooltip: =ThisItem.ID
+            Width: =Parent.Width/18
+            ZIndex: =2
+
+        lbl_ProjectName_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: |-
+                =//ThisItem.'Project Name'
+                If(Len(ThisItem.'Project Name') > 25, Concatenate(Left(ThisItem.'Project Name', 25), "..."), ThisItem.'Project Name')
+            Tooltip: =ThisItem.'Project Name'
+            Width: =Parent.Width/7
+            X: |-
+                =//80
+                lbl_ID_Value.X+lbl_ID_Value.Width
+            ZIndex: =3
+
+        lbl_CERAmount_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Original CER (K€)'
+            Tooltip: =ThisItem.'Original CER (K€)'
+            Width: =Parent.Width/12
+            X: =lbl_ProjectName_Value.X+lbl_ProjectName_Value.Width
+            ZIndex: =4
+
+        lbl_OTE_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.'Original One off (K€)'
+            Tooltip: =ThisItem.'Total Revised One off (K€)'
+            Width: =Parent.Width/12
+            X: =lbl_CERAmount_Value.X+lbl_CERAmount_Value.Width
+            ZIndex: =5
+
+        lbl_CurrentApprover_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingRight: =0
+            Text: |-
+                =//ThisItem.Country.Value
+                If(
+                    Len(ThisItem.Country.Value) > 24,
+                    Concatenate(
+                        Left(
+                            ThisItem.Country.Value,
+                            24
+                        ),
+                        "..."
+                    ),
+                    //ThisItem.'Test (Test0)'
+                    ThisItem.Country.Value
+                )
+            Tooltip: =ThisItem.Country.Value
+            Width: =Parent.Width/6
+            X: =lbl_OTE_Value.X+lbl_OTE_Value.Width
+            ZIndex: =6
+
+        lbl_Plant_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.Plant.Value
+            Tooltip: =ThisItem.Plant.Value
+            Width: =Parent.Width/10.5
+            X: =lbl_CurrentApprover_Value.X+lbl_CurrentApprover_Value.Width
+            ZIndex: =7
+
+        Rect_GalSepartor As rectangle:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0.25
+            Fill: |-
+                =ColorValue("#F0F0F0")
+                //ColorValue("#A19F9D")
+            Height: =0.25
+            OnSelect: =Select(Parent)
+            Width: =Parent.Width
+            Y: =54.75
+            ZIndex: =8
+
+        rect_ID_Line As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_ID_Value.Width
+            Y: =3
+            ZIndex: =9
+
+        rect_ProjectNameLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_ProjectName_Value.Width+lbl_ProjectName_Value.X
+            Y: =3
+            ZIndex: =10
+
+        rect_CERAmountLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_CERAmount_Value.Width+lbl_CERAmount_Value.X
+            Y: =3
+            ZIndex: =11
+
+        rect_OTEAmountLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_OTE_Value.Width+lbl_OTE_Value.X
+            Y: =3
+            ZIndex: =12
+
+        img_Icon_Editform As image:
+            Height: =20
+            Image: |-
+                ="data:image/svg+xml,"
+                &
+                EncodeUrl("
+                
+                <svg width='100px' height='100px' viewBox='0 0 100 100' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+                    <title>54. Pencil</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id='54.-Pencil' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'>
+                        <g transform='translate(2.000000, 2.000000)' stroke='#3862B2' stroke-width='4'>
+                            <path d='M67.6455517,8.78427836 C68.727981,7.71300814 70.3516249,6.10610281 72.5164835,3.96356236 C76.8061718,-0.28190241 83.7093961,-0.333103771 87.9327727,3.84673285 L92.8291664,8.69264826 C97.0536595,12.8735899 97.0017515,19.7036085 92.7111199,23.9500067 C90.4469841,26.1908009 88.7488823,27.8713965 87.6168144,28.9917936' id='Layer-1'></path>
+                            <path d='M10.7755102,68.8339996 L26.5638297,84.4595528' id='Layer-2'></path>
+                            <polygon id='Layer-3' points='15.0475446 91.3095912 0.00769088282 95.7112859 4.47127677 80.8423571 15.0475446 91.3095912'></polygon>
+                            <polygon id='Layer-4' points='8.55233711 67.2682845 67.5828129 8.84637033 77.6801466 18.8396078 87.930731 28.6969881 28.9002552 87.1189023 0 95.9798022'></polygon>
+                        </g>
+                    </g>
+                </svg>
+                
+                ")
+            OnSelect: |-
+                =Set(gbl_RequestStatus,ThisItem.'Request Status');
+                Set(gbl_IsRevision,ThisItem.'Is Revision');
+                Set(gbl_Item,gal_CapexRequestlist.Selected);
+                EditForm(frm_NewCapexRequest);Navigate('New Capex Request Screen');
+            Width: =20
+            X: =Parent.Width-75
+            Y: =13
+            ZIndex: =13
+
+        img_ViewForm As image:
+            Height: =20
+            Image: |-
+                ="data:image/svg+xml,"
+                &
+                EncodeUrl("
+                <svg version='1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' enable-background='new 0 0 48 48'>
+                    <polygon fill='#3862B2' points='17.1,5 14,8.1 29.9,24 14,39.9 17.1,43 36,24'/>
+                </svg>
+                ")
+            OnSelect: |-
+                =
+                // Set the Variable with Current item Request Status 
+                Set(gbl_RequestStatus,ThisItem.'Request Status');
+                // Set the Variable with Current Is Revision State
+                Set(gbl_IsRevision,ThisItem.'Is Revision');
+                Set(gbl_Item,gal_CapexRequestlist.Selected);
+                //Set the Form to View Mode
+                ViewForm(frm_NewCapexRequest);
+                // Navigate 
+                Navigate('New Capex Request Screen');
+            Visible: |-
+                =true
+                //If(ThisItem.'Request Status'="Draft",false,true)
+            Width: =20
+            X: |-
+                =//1271//
+                Parent.Width-45
+            Y: =12
+            ZIndex: =14
+
+        rect_CurrentApproverLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_CurrentApprover_Value.X+lbl_CurrentApprover_Value.Width
+            Y: =6
+            ZIndex: =15
+
+        rect_ApproverStatusLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_Plant_Value.X+lbl_Plant_Value.Width
+            Y: =6
+            ZIndex: =16
+
+        lbl_BusinessCat_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.'Business Category'.Value
+            Tooltip: =ThisItem.'Business Category'.Value
+            Width: =Parent.Width/8
+            X: =lbl_Plant_Value.X+lbl_Plant_Value.Width
+            ZIndex: =17
+
+        bttn_ViewForm As button:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =img_ViewForm.Height
+            HoverFill: =Color.Transparent
+            OnSelect: =Select(img_ViewForm);Refresh('EV_Capex SharePoint List');
+            PressedFill: =Color.Transparent
+            Text: =""
+            Tooltip: ="View Request"
+            Width: =img_ViewForm.Width
+            X: =img_ViewForm.X
+            Y: =img_ViewForm.Y
+            ZIndex: =18
+
+        bttn_EditForm As button:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =img_Icon_Editform.Height
+            HoverFill: =Color.Transparent
+            OnSelect: |-
+                =Select(img_Icon_Editform);
+                Refresh('EV_Capex SharePoint List');
+                Set(gbl_ItemID,ThisItem.ID)
+            PressedFill: =Color.Transparent
+            Text: =""
+            Tooltip: ="Edit Request"
+            Width: =img_Icon_Editform.Width
+            X: =img_Icon_Editform.X
+            Y: =img_Icon_Editform.Y
+            ZIndex: =19
+
+        rect_BussinessCategoryLine As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_BusinessCat_Value.X+lbl_BusinessCat_Value.Width
+            Y: =6
+            ZIndex: =20
+
+        lbl_InvestmentTypeValue As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Text: |+
+                =ThisItem.'Type of Investment'.Value
+                
+            Tooltip: =ThisItem.'Type of Investment'.Value
+            Width: =Parent.Width/10
+            X: =lbl_BusinessCat_Value.X+lbl_BusinessCat_Value.Width
+            ZIndex: =21
+
+        lbl_ApprovalStatus_Value As label:
+            Font: =Font.Arial
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingLeft: =10
+            Text: |
+                =ThisItem.'Approval Status'.Value
+                //ThisItem.'Request Status'
+            Tooltip: =ThisItem.'Approval Status'.Value
+            Width: =Parent.Width/11
+            X: =lbl_InvestmentTypeValue.X+lbl_InvestmentTypeValue.Width
+            ZIndex: =22
+
+        rect_BussinessCategoryLine_1 As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_InvestmentTypeValue.X+lbl_InvestmentTypeValue.Width
+            Y: =6
+            ZIndex: =23
+
+        rect_BussinessCategoryLine_2 As rectangle:
+            Fill: |-
+                =ColorValue("#E8E8E8")
+            Height: =Parent.TemplateHeight-6
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =lbl_ApprovalStatus_Value.X+lbl_ApprovalStatus_Value.Width
+            Y: =6
+            ZIndex: =24
+
