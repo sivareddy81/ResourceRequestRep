@@ -338,30 +338,71 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =Set(dataSaved,!dataSaved);
-                    Set(msgText,"Please wait till saving your data...");
-                    UpdateContext({reqNo:"IS"&RandBetween(1000,9999)});
-                    If(IsError(UpdateContext({recentItem:Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'},
-                                            SubDepartment:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'},
-                                            Role:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'},
-                                            'Employment Type':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'},
-                                            ProjectSpecificHiring:chkProjectSpecHiring.Value,
-                                            ProjectName:txtProjectName.Text,
-                                            RequestStatus:"Draft",
-                                            Comments:txtComments.Text,
-                                            RequestHistory:txtReqHistory.Text
-                                  })});Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,{
-                             contentBytes: First(DataCardValue_JD.Attachments).Value,
-                             name: First(DataCardValue_JD.Attachments).Name
-                         });ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))),Set(dataSaved,!dataSaved);Set(msgText,"Item was not saved,please check your data once"),Set(msgText,"Item was save successfully."))
+                    =Set(
+                        dataSaved,
+                        !dataSaved
+                    );
+                    Set(
+                        msgText,
+                        "Please wait till saving your data..."
+                    );
+                    UpdateContext(
+                        {
+                            reqNo: "IS" & RandBetween(
+                                1000,
+                                9999
+                            )
+                        }
+                    );
+                    If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
+                                            },
+                                            SubDepartment: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
+                                            },
+                                            Role: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
+                                            },
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
+                                            ProjectName: txtProjectName.Text,
+                                            RequestStatus: "Draft",
+                                            Comments: txtComments.Text,
+                                            RequestHistory: txtReqHistory.Text
+                                        }
+                                    )
+                                }
+                            );
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    )
                 Text: ="Save"
                 X: =552
                 Y: =30
