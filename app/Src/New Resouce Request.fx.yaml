@@ -116,7 +116,7 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                "'New Request Form' As form":
+                NewResourceRequestForm As form:
                     DataSource: =ResourceRequest
                     DefaultMode: =FormMode.New
                     Height: =540
@@ -134,8 +134,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue4.Selected
-                        Width: =Parent.Width/3
-                        X: =4
+                        Width: =339
+                        X: =0
                         Y: =0
                         ZIndex: =2
 
@@ -200,8 +200,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue5.Selected
-                        Width: =Parent.Width/3
-                        X: =8
+                        Width: =339
+                        X: =3
                         Y: =0
                         ZIndex: =2
 
@@ -266,8 +266,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue3.Selected
-                        Width: =Parent.Width/3
-                        X: =10
+                        Width: =339
+                        X: =6
                         Y: =0
                         ZIndex: =2
 
@@ -332,9 +332,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue6.Selected
-                        Width: =Parent.Width/3
-                        X: =0
-                        Y: =1
+                        Width: =339
+                        X: =9
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey6 As label:
@@ -398,8 +398,8 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue7.Value
-                        Width: =Parent.Width/3
-                        X: =4
+                        Width: =339
+                        X: =0
                         Y: =1
                         ZIndex: =2
 
@@ -458,8 +458,8 @@
                         MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "ProjectName")
                         Required: =false
                         Update: =DataCardValue8.Text
-                        Width: =Parent.Width/3
-                        X: =8
+                        Width: =339
+                        X: =3
                         Y: =1
                         ZIndex: =2
 
@@ -526,9 +526,9 @@
                         MaxLength: =DataSourceInfo([@ResourceRequest], DataSourceInfo.MaxLength, "Comments")
                         Required: =false
                         Update: =DataCardValue10.Text
-                        Width: =Parent.Width/2
-                        X: =0
-                        Y: =2
+                        Width: =339
+                        X: =6
+                        Y: =1
                         ZIndex: =2
 
                         DataCardKey10 As label:
@@ -594,9 +594,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue12.Attachments
-                        Width: =Parent.Width/2
-                        X: =4
-                        Y: =2
+                        Width: =339
+                        X: =9
+                        Y: =1
                         ZIndex: =2
 
                         DataCardKey12 As label:

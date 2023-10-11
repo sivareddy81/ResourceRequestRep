@@ -283,6 +283,9 @@
                             
                             NewForm(frm_NewCapexRequest);Navigate('New Capex Request Screen');UpdateContext({loc_ReviseMode:false});
                             Set(gbl_varLastRecord,Blank());Set(gbl_varLastRecord,{});*/
+                            ResetForm(NewResourceRequestForm);
+                            
+                            NewForm(NewResourceRequestForm);Navigate('New Resouce Request')
                         PaddingRight: =0
                         PressedBorderColor: =RGBA(102, 113, 166, 1)
                         PressedColor: =RGBA(0, 0, 0, 1)
