@@ -1,5 +1,6 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: =ClearCollect(colGalHomeScreen,ResourceRequest)
     StartScreen: =NewResourceRequestScreen
     Theme: =PowerAppsTheme
 

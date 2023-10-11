@@ -58,8 +58,8 @@
             Label1_1 As label:
                 Text: ="Department"
                 Width: =237
-                X: =34
-                Y: =46
+                X: =40
+                Y: =40
                 ZIndex: =3
 
             drpDepartment As dropdown:
@@ -88,6 +88,24 @@
                 X: =927
                 Y: =46
                 ZIndex: =6
+
+            Label2 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =7
+
+            Label2_1 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =8
 
         DataCard6 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -134,6 +152,24 @@
                 Y: =40
                 ZIndex: =6
 
+            Label2_2 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =7
+
+            Label2_3 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =8
+
         DataCard7 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -164,8 +200,8 @@
                 Text: ="Project Name"
                 Visible: =chkProjectSpecHiring.Value=true
                 Width: =237
-                X: =664
-                Y: =40
+                X: =672
+                Y: =45
                 ZIndex: =3
 
             txtProjectName As text:
@@ -173,8 +209,28 @@
                 Visible: =chkProjectSpecHiring.Value=true
                 Width: =405
                 X: =927
-                Y: =40
+                Y: =45
                 ZIndex: =4
+
+            Label2_4 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =false
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =5
+
+            Label2_5 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =chkProjectSpecHiring.Value=true
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =6
 
         DataCard8 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -213,6 +269,15 @@
                 Y: =27
                 ZIndex: =2
 
+            Label2_6 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
         DataCard10 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -248,6 +313,15 @@
                 Y: =30
                 ZIndex: =2
 
+            Label2_7 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
         DataCard11 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -275,6 +349,16 @@
                 X: =299
                 Y: =40
                 ZIndex: =2
+
+            Label2_8 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =false
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
 
         DataCard12 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -304,6 +388,15 @@
                 Y: =40
                 ZIndex: =2
 
+            Label2_9 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
         DataCard13 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
@@ -320,7 +413,10 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =Set(
+                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment.SelectedText),isblankdrpRole:!IsBlank(drpRole.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType.SelectedText),isblanktxtProj:If(chkProjectSpecHiring.Value=true,!IsBlank(txtProjectName.Text)),isttachmentblank:If(CountRows(DataCardValue_JD.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory.Text)});
+                    
+                    
+                    Set(
                         dataSaved,
                         !dataSaved
                     );
@@ -336,7 +432,7 @@
                             )
                         }
                     );
-                    If(
+                    If(isblankdrpDept&&isblankdrpSubDept&&isblankdrpRole&&isblankdrpEmpT&&isblanktxtProj&&isttachmentblank&&isttManachmentblank&&isblankReqHis,If(
                         IsError(
                             UpdateContext(
                                 {
@@ -389,7 +485,64 @@
                             msgText,
                             "Item was save successfully."
                         )
-                    );
+                    );,Set(
+                        msgText,
+                        "Please fill mandatory fileds & submit the form"
+                    ););
+                    /*If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment.SelectedText.ID,
+                                                Value: drpDepartment.SelectedText.DepartmentName
+                                            },
+                                            SubDepartment: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment.SelectedText.ID,
+                                                Value: drpSubDepartment.SelectedText.SubDepartmentName
+                                            },
+                                            Role: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole.SelectedText.ID,
+                                                Value: drpRole.SelectedText.Role
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType.SelectedText.ID,
+                                                Value: drpEmployeeType.SelectedText.EmploymentType
+                                            },
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
+                                            ProjectName: txtProjectName.Text,
+                                            RequestStatus: "Draft",
+                                            Comments: txtComments.Text,
+                                            RequestHistory: txtReqHistory.Text
+                                        }
+                                    )
+                                }
+                            );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                             contentBytes: First(DataCardValue_JD.Attachments).Value,
+                             name: First(DataCardValue_JD.Attachments).Name
+                         });
+                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    );*/
                 Text: ="Submit"
                 X: =768
                 Y: =30
@@ -463,11 +616,11 @@
                                     )
                                 }
                             );
-                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
                              contentBytes: First(DataCardValue_JD.Attachments).Value,
                              name: First(DataCardValue_JD.Attachments).Name
-                         });
-                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
+                            }});
+                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
                         ),
                        
                         Set(
