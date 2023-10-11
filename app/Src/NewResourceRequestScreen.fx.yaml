@@ -319,6 +319,77 @@
                 Fill: =RGBA(99, 139, 44, 1)
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
+                OnSelect: |-
+                    =Set(
+                        dataSaved,
+                        !dataSaved
+                    );
+                    Set(
+                        msgText,
+                        "Please wait till saving your data..."
+                    );
+                    UpdateContext(
+                        {
+                            reqNo: "IS" & RandBetween(
+                                1000,
+                                9999
+                            )
+                        }
+                    );
+                    If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
+                                            },
+                                            SubDepartment: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
+                                            },
+                                            Role: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
+                                            },
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
+                                            ProjectName: txtProjectName.Text,
+                                            RequestStatus: "Draft",
+                                            Comments: txtComments.Text,
+                                            RequestHistory: txtReqHistory.Text
+                                        }
+                                    )
+                                }
+                            );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                             contentBytes: First(DataCardValue_JD.Attachments).Value,
+                             name: First(DataCardValue_JD.Attachments).Name
+                         });
+                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    );
                 Text: ="Submit"
                 X: =768
                 Y: =30
@@ -328,7 +399,7 @@
                 Fill: =RGBA(172, 62, 11, 1)
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
-                Text: ="Button"
+                Text: ="Cancel"
                 X: =987
                 Y: =30
                 ZIndex: =2
@@ -407,7 +478,7 @@
                             msgText,
                             "Item was save successfully."
                         )
-                    )
+                    );
                 Text: ="Save"
                 X: =552
                 Y: =30
@@ -441,4 +512,12 @@
             X: =545
             Y: =384
             ZIndex: =2
+
+        Icon1 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Cancel
+            OnSelect: =Set(dataSaved,!dataSaved)
+            X: =1284
+            Y: =6
+            ZIndex: =3
 
