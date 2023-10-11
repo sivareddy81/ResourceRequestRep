@@ -5720,7 +5720,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Department_DataCard1",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5874,7 +5874,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Employment Type_DataCard1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12895,7 +12895,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "Sub Department_DataCard1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

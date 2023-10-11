@@ -187,7 +187,7 @@
                                 4,
                                 12
                             )
-                        Text: ="CER Amt (k)"
+                        Text: ="Requested By"
                         Width: =Parent.Width/4.3
                         X: =30
                         Y: =52
@@ -211,7 +211,7 @@
                                 4,
                                 12
                             )
-                        Text: ="OTE Amt (k)"
+                        Text: ="Request Status"
                         Width: =Parent.Width/4.3
                         X: =30
                         Y: =52
@@ -235,7 +235,7 @@
                                 4,
                                 12
                             )
-                        Text: ="Country"
+                        Text: ="Department"
                         Width: =Parent.Width/4.3
                         X: =240
                         Y: =52
