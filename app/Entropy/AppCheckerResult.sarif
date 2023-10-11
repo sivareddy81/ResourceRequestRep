@@ -61,7 +61,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1549,
+                  "charOffset": 1571,
                   "snippet": {
                     "text": ")"
                   }
@@ -97,7 +97,7 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 1551,
+                  "charOffset": 1573,
                   "snippet": {
                     "text": ""
                   }
@@ -214,10 +214,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1359,
+                  "charLength": 1381,
                   "charOffset": 106,
                   "snippet": {
-                    "text": "Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              })"
+                    "text": "Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              })"
                   }
                 }
               },
@@ -254,10 +254,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1310,
+                  "charLength": 1332,
                   "charOffset": 154,
                   "snippet": {
-                    "text": "{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              }"
+                    "text": "{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              }"
                   }
                 }
               },
@@ -296,10 +296,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1453,
+                  "charLength": 1475,
                   "charOffset": 98,
                   "snippet": {
-                    "text": "IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        SubDepartment:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        Role:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        ProjectSpecificHiring:chkProjectSpecHiring_1.Value,\n                        ProjectName:txtProjectName_1.Text,\n                        RequestStatus:\"Draft\",\n                        Comments:txtComments_1.Text,\n                        RequestHistory:txtReqHistory_1.Text\n              });Set(dataSaved,!dataSaved),Notify(\"Item was not saved,please check your data once\"),))"
+                    "text": "IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              });Set(dataSaved,!dataSaved),Notify(\"Item was not saved,please check your data once\"),))"
                   }
                 }
               },
@@ -369,19 +369,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel"
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel",
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1"
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.Icon2"
               }
             }
           ],
@@ -399,19 +399,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel"
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel",
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1"
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests"
               }
             }
           ],
@@ -429,19 +459,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel"
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel",
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1"
+                "member": "TabIndex",
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests"
               }
             }
           ],
@@ -451,188 +481,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -969,49 +819,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.TabIndex"
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "HomeScreen",
-                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "HomeScreen",
-                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests"
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1"
               }
             }
           ],
@@ -1029,19 +849,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "HomeScreen",
-                "type": "HomeScreen.HomeCanvas.DataCard1.Icon2"
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1"
               }
             }
           ],
@@ -1059,19 +879,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.TabIndex"
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.Icon2.TabIndex",
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "HomeScreen",
-                "type": "HomeScreen.HomeCanvas.DataCard1.Icon2"
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1"
               }
             }
           ],
@@ -1081,8 +901,188 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
         },
         {
           "locations": [

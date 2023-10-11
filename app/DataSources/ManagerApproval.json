@@ -34,6 +34,7 @@
       "OData__ColorTag": "Color Tag",
       "OData__DisplayName": "Sensitivity",
       "OData__ExtendedDescription": "Description",
+      "RefResourceID": "RefResourceID",
       "Title": "Title"
     },
     "DatasetName": "https://inva11.sharepoint.com/sites/InvaDev",

@@ -342,20 +342,20 @@
                     If(IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                             Value:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'},
-                                            SubDepartment:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            'Sub Department':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                             Value:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'},
-                                            Role:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                            'Job Role':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                             Value:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'},
                                             'Employment Type':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                             Id:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                             Value:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'},
-                                            ProjectSpecificHiring:chkProjectSpecHiring_1.Value,
-                                            ProjectName:txtProjectName_1.Text,
-                                            RequestStatus:"Draft",
+                                            'Project Specific Hiring':chkProjectSpecHiring_1.Value,
+                                            'Project Name':txtProjectName_1.Text,
+                                            'Request Status':"Draft",
                                             Comments:txtComments_1.Text,
-                                            RequestHistory:txtReqHistory_1.Text
+                                            'Request History':txtReqHistory_1.Text
                                   });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),))
                 Text: ="Save"
                 X: =552

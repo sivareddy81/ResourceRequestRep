@@ -446,12 +446,12 @@
                                                 Id: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
                                             },
-                                            SubDepartment: {
+                                            'Sub Department': {
                                                 '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                                 Id: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
                                             },
-                                            Role: {
+                                            'Job Role': {
                                                 '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                                 Id: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
@@ -461,11 +461,11 @@
                                                 Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                             },
-                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
-                                            ProjectName: txtProjectName.Text,
-                                            RequestStatus: "Draft",
+                                            'Project Specific Hiring': chkProjectSpecHiring.Value,
+                                            'Project Name': txtProjectName.Text,
+                                            'Request Status': "Draft",
                                             Comments: txtComments.Text,
-                                            RequestHistory: txtReqHistory.Text
+                                            'Request History': txtReqHistory.Text
                                         }
                                     )
                                 }
@@ -593,12 +593,12 @@
                                                 Id: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
                                             },
-                                            SubDepartment: {
+                                            'Sub Department': {
                                                 '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                                 Id: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
                                             },
-                                            Role: {
+                                            'Job Role': {
                                                 '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                                 Id: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
@@ -608,11 +608,11 @@
                                                 Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                             },
-                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
-                                            ProjectName: txtProjectName.Text,
-                                            RequestStatus: "Draft",
+                                            'Project Specific Hiring': chkProjectSpecHiring.Value,
+                                            'Project Name': txtProjectName.Text,
+                                            'Request Status': "Draft",
                                             Comments: txtComments.Text,
-                                            RequestHistory: txtReqHistory.Text
+                                            'Request History': txtReqHistory.Text
                                         }
                                     )
                                 }
