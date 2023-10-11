@@ -1,7 +1,7 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: =ClearCollect(colGalHomeScreen,ResourceRequest)
-    StartScreen: =NewResourceRequestScreen
+    StartScreen: =HomeScreen
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

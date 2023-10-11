@@ -27,8 +27,10 @@
                 ZIndex: =1
 
             Label6 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =53
                 Text: ="Department"
                 Width: =231
@@ -37,8 +39,10 @@
                 ZIndex: =2
 
             Label6_1 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =53
                 Text: ="Sub-Department"
                 Width: =229
@@ -47,8 +51,10 @@
                 ZIndex: =3
 
             Label6_2 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =53
                 Text: ="Employee Type"
                 Width: =255
@@ -57,8 +63,10 @@
                 ZIndex: =4
 
             Label6_3 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =53
                 Text: ="Role"
                 Width: =271
@@ -67,8 +75,10 @@
                 ZIndex: =5
 
             Label6_4 As label:
+                Align: =Align.Center
                 BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
                 Height: =53
                 Text: ="Status"
                 Width: =232
@@ -81,6 +91,7 @@
                 Fill: =RGBA(150, 90, 29, 1)
                 Height: =53
                 Icon: =Icon.Add
+                OnSelect: =Navigate(NewResourceRequestScreen,ScreenTransition.None);
                 Width: =87
                 X: =1223
                 Y: =110
@@ -91,7 +102,7 @@
         UserName: =User().FullName
         ZIndex: =4
 
-    Gallery1 As gallery.galleryVertical:
+    GalleryResourceReqests As gallery.galleryVertical:
         DelayItemLoading: =true
         Height: =515
         Items: =colGalHomeScreen
