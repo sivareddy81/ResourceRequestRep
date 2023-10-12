@@ -2453,36 +2453,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 43,
+                  "charLength": 8,
+                  "charOffset": 494,
                   "snippet": {
-                    "text": "UpdateContext"
+                    "text": "IsFolder"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "OnVisible",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "IsFolder"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrOperatorExpected",
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
           "ruleIndex": 5
         },
         {
@@ -2490,36 +2493,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 1571,
+                  "charOffset": 503,
                   "snippet": {
-                    "text": ")"
+                    "text": "="
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "OnVisible",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Filter"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrBadToken",
+          "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 6
         },
         {
@@ -2527,281 +2533,80 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 1573,
+                  "charLength": 2,
+                  "charOffset": 511,
                   "snippet": {
-                    "text": ""
+                    "text": "&&"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "OnVisible",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Eof",
-              "ParenClose"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 7
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 6
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 43,
+                  "charLength": 2,
+                  "charOffset": 558,
                   "snippet": {
-                    "text": "UpdateContext"
+                    "text": "&&"
                   }
                 }
               },
               "properties": {
-                "member": "OnSelect",
+                "member": "OnVisible",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 169,
-                  "snippet": {
-                    "text": "reqNo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
             "arguments": [
-              "reqNo"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1381,
-                  "charOffset": 106,
-                  "snippet": {
-                    "text": "Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              })"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1332,
-                  "charOffset": 154,
-                  "snippet": {
-                    "text": "{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "RequestNumber",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1475,
-                  "charOffset": 98,
-                  "snippet": {
-                    "text": "IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpDepartment_1.SelectedText.ID,\n                        Value:drpDepartment_1.SelectedText.DepartmentName},\n                        'Sub Department':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpSubDepartment_1.SelectedText.ID,\n                        Value:drpSubDepartment_1.SelectedText.SubDepartmentName},\n                        'Job Role':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpRole_1.SelectedText.ID,\n                        Value:drpRole_1.SelectedText.Role},\n                        'Employment Type':{'@odata.type':\"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference\",\n                        Id:drpEmployeeType_1.SelectedText.ID,\n                        Value:drpEmployeeType_1.SelectedText.EmploymentType},\n                        'Project Specific Hiring':chkProjectSpecHiring_1.Value,\n                        'Project Name':txtProjectName_1.Text,\n                        'Request Status':\"Draft\",\n                        Comments:txtComments_1.Text,\n                        'Request History':txtReqHistory_1.Text\n              });Set(dataSaved,!dataSaved),Notify(\"Item was not saved,please check your data once\"),))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "3",
-              "1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArity",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 97,
-                  "snippet": {
-                    "text": "("
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard13_1.btnSave_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArityMinimum",
-          "ruleIndex": 10
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2831,7 +2636,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2861,7 +2666,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2891,7 +2696,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2921,7 +2726,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2951,7 +2756,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2981,7 +2786,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3011,7 +2816,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -3041,7 +2846,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3071,7 +2876,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -3101,7 +2906,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3131,7 +2936,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3161,7 +2966,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3191,7 +2996,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3221,7 +3026,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3251,7 +3056,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3281,7 +3086,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3311,7 +3116,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3341,7 +3146,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3370,7 +3175,7 @@
             "level": "Low"
           },
           "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -3400,7 +3205,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3430,7 +3235,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3460,7 +3265,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3490,7 +3295,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3520,7 +3325,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3550,7 +3355,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3580,7 +3385,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3610,7 +3415,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3640,7 +3445,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3670,7 +3475,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3700,7 +3505,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3730,7 +3535,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -3760,26 +3565,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpDepartment_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2"
               }
             }
           ],
@@ -3790,26 +3595,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard5_1.drpSubDepartment_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2"
               }
             }
           ],
@@ -3820,26 +3625,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpRole_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1"
               }
             }
           ],
@@ -3850,26 +3655,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard6_1.drpEmployeeType_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1"
               }
             }
           ],
@@ -3880,26 +3685,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard7_1.txtProjectName_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2"
               }
             }
           ],
@@ -3910,26 +3715,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard8_1.DataCardValue12_4"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2"
               }
             }
           ],
@@ -3940,26 +3745,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard10_1.DataCardValue12_5"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2"
               }
             }
           ],
@@ -3970,26 +3775,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard11_1.txtComments_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2"
               }
             }
           ],
@@ -4000,26 +3805,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.NewResourceRequestCanvas_1.DataCard12_1.txtReqHistory_1"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2"
               }
             }
           ],
@@ -4030,7 +3835,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -4060,7 +3865,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -4090,7 +3895,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -4120,7 +3925,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -4150,7 +3955,247 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 12
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HomeScreen",
+                "type": "HomeScreen.HomeCanvas.DataCard1.GalleryResourceReqests.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -4180,7 +4225,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -4210,7 +4255,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -4240,7 +4285,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -4270,7 +4315,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -4300,7 +4345,7 @@
             "level": "Medium"
           },
           "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -4330,7 +4375,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 17
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -4360,7 +4405,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 17
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -4390,7 +4435,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 17
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -4420,7 +4465,37 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 15
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.isblankReqHis"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.isblankReqHis",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "isblankReqHis",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 11
         }
       ],
       "tool": {
@@ -4509,94 +4584,39 @@
               }
             },
             {
-              "id": "app-ErrOperatorExpected",
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
-                  "text": "Expected operator. We expect an operator such as +, *, or & at this point in the formula."
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Edit your formula so that it includes an operator between the operands."
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
                 ],
-                "level": "High",
+                "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
             },
             {
-              "id": "app-ErrBadToken",
+              "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
-                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or replace the unexpected characters."
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrExpectedFound-Ex-Fnd",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unexpected characters. The formula contains '{0}' where '{1}' is expected."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or replace the unexpected characters with an expected character."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrTypeError-Arg-Expected-Found",
-              "messageStrings": {
-                "issue": {
-                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrBadArity",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrBadArityMinimum",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
+                "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }

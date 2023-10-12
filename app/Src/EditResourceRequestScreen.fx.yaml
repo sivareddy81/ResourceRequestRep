@@ -1,6 +1,6 @@
 "EditResourceRequestScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 237, 237, 1)
-    OnVisible: |-
+    OnVisible: |
         =Concurrent(
             ClearCollect(
                 colDepartments,
@@ -23,16 +23,17 @@
                    "EmploymentType","ID"
                 )
             ),
-            Set(dataSaved,false)
-        )
+            Set(dataSaved,false),
+            ClearCollect(colManagerApprovals,Filter(ManagerApproval, IsFolder = false && StartsWith('Folder path', "ManagerApproval")&&RefResourceID=editViewItem))
+        );
 
-    NewResourceRequestCanvas_1 As fluidGrid.fluidGridWithBlankCard:
+    EditResourceRequestCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =Parent.Height - Self.Y
         Width: =Parent.Width
         ZIndex: =1
 
-        DataCard4_1 As dataCard.blankCard:
+        DataCard4_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -43,7 +44,7 @@
             Y: =0
             ZIndex: =2
 
-        DataCard5_1 As dataCard.blankCard:
+        DataCard5_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -55,14 +56,14 @@
             Y: =1
             ZIndex: =3
 
-            Label1_11 As label:
+            Label1_22 As label:
                 Text: ="Department"
                 Width: =237
-                X: =34
-                Y: =46
+                X: =40
+                Y: =40
                 ZIndex: =3
 
-            drpDepartment_1 As dropdown:
+            drpDepartment_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =
@@ -72,24 +73,42 @@
                 Y: =46
                 ZIndex: =4
 
-            Label1_12 As label:
+            Label1_23 As label:
                 Text: ="Sub-Department"
                 Width: =237
                 X: =672
                 Y: =46
                 ZIndex: =5
 
-            drpSubDepartment_1 As dropdown:
+            drpSubDepartment_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =
-                Items: =ShowColumns(Filter(SubDepartments,DepartmentName.Value=drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'),"SubDepartmentName","ID")
+                Items: =ShowColumns(Filter(SubDepartments,DepartmentName.Value=drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'),"SubDepartmentName","ID")
                 Width: =405
                 X: =927
                 Y: =46
                 ZIndex: =6
 
-        DataCard6_1 As dataCard.blankCard:
+            Label2_10 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =7
+
+            Label2_11 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =8
+
+        DataCard6_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -101,14 +120,14 @@
             Y: =2
             ZIndex: =4
 
-            Label1_14 As label:
+            Label1_25 As label:
                 Text: ="Employee Type"
                 Width: =237
                 X: =672
                 Y: =45
                 ZIndex: =3
 
-            drpEmployeeType_1 As dropdown:
+            drpEmployeeType_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =
@@ -118,14 +137,14 @@
                 Y: =45
                 ZIndex: =4
 
-            Label1_13 As label:
+            Label1_24 As label:
                 Text: ="Job Role"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =5
 
-            drpRole_1 As dropdown:
+            drpRole_2 As dropdown:
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =
                 Items: =JobRole
@@ -134,7 +153,25 @@
                 Y: =40
                 ZIndex: =6
 
-        DataCard7_1 As dataCard.blankCard:
+            Label2_12 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =7
+
+            Label2_13 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =8
+
+        DataCard7_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -146,37 +183,57 @@
             Y: =3
             ZIndex: =5
 
-            Label1_15 As label:
+            Label1_26 As label:
                 Text: ="Project Specific Hiring"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =1
 
-            chkProjectSpecHiring_1 As checkbox:
+            chkProjectSpecHiring_2 As checkbox:
                 Height: =40
                 Text: ="Yes/No"
                 X: =299
                 Y: =45
                 ZIndex: =2
 
-            Label1_16 As label:
+            Label1_27 As label:
                 Text: ="Project Name"
-                Visible: =chkProjectSpecHiring_1.Value=true
+                Visible: =chkProjectSpecHiring_2.Value=true
                 Width: =237
-                X: =664
-                Y: =40
+                X: =672
+                Y: =45
                 ZIndex: =3
 
-            txtProjectName_1 As text:
+            txtProjectName_2 As text:
                 Default: =
-                Visible: =chkProjectSpecHiring_1.Value=true
+                Visible: =chkProjectSpecHiring_2.Value=true
                 Width: =405
                 X: =927
-                Y: =40
+                Y: =45
                 ZIndex: =4
 
-        DataCard8_1 As dataCard.blankCard:
+            Label2_14 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =false
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =5
+
+            Label2_15 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =chkProjectSpecHiring_2.Value=true
+                Width: =20
+                X: =658
+                Y: =55
+                ZIndex: =6
+
+        DataCard8_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -188,30 +245,41 @@
             Y: =4
             ZIndex: =6
 
-            Label1_17 As label:
+            Label1_28 As label:
                 Text: ="Job Description"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue12_4 As attachments:
+            DataCardValue_JD_1 As attachments:
                 BorderColor: =
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
                 Items: =
+                MaxAttachments: =1
+                MaxAttachmentSize: =1
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Width: =921
+                Width: =555
                 X: =305
                 Y: =27
                 ZIndex: =2
 
-        DataCard10_1 As dataCard.blankCard:
+            Label2_16 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
+        DataCard10_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -223,14 +291,14 @@
             Y: =6
             ZIndex: =8
 
-            Label1_18 As label:
+            Label1_29 As label:
                 Text: ="Manager Approval"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =1
 
-            DataCardValue12_5 As attachments:
+            DataCardValue_Manager_1 As attachments:
                 BorderColor: =
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
@@ -241,12 +309,87 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Width: =921
+                Width: =567
                 X: =299
                 Y: =30
                 ZIndex: =2
 
-        DataCard11_1 As dataCard.blankCard:
+            Label2_17 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
+            "Gallery_ManagerApprovalFiles As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =210
+                Items: =colManagerApprovals
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =52
+                Width: =454
+                X: =878
+                Y: =30
+                ZIndex: =4
+
+                Image2 As image:
+                    Height: =30
+                    Image: =ThisItem.Thumbnail.Small
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =8
+                    RadiusBottomRight: =8
+                    RadiusTopLeft: =8
+                    RadiusTopRight: =8
+                    Width: =30
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                Title1 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =31
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.'File name with extension'
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =265
+                    X: =67
+                    Y: =10
+                    ZIndex: =2
+
+                Separator1 As rectangle:
+                    Height: =4
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Icon5 As icon.CancelBadge:
+                    Height: =30
+                    Icon: =Icon.CancelBadge
+                    OnSelect: =RemoveIf(ManagerApproval,ID=ThisItem.ID);Remove(colManagerApprovals,ThisItem)
+                    Width: =30
+                    X: =402
+                    Y: =10
+                    ZIndex: =7
+
+                HtmlText1 As htmlViewer:
+                    Height: =35
+                    HtmlText: ="<a href='"&ThisItem.'Link to item'&"'><b><font color=blue>"&ThisItem.'File name with extension'&"</font></b></a>."
+                    OnSelect: =Select(Parent);Download(ThisItem.'Link to item');
+                    Width: =340
+                    X: =46
+                    Y: =11
+                    ZIndex: =8
+
+        DataCard11_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
@@ -258,14 +401,14 @@
             Y: =7
             ZIndex: =9
 
-            Label1_19 As label:
+            Label1_30 As label:
                 Text: ="Comments"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =1
 
-            txtComments_1 As text:
+            txtComments_2 As text:
                 Default: =
                 Height: =130
                 Mode: =TextMode.MultiLine
@@ -274,26 +417,37 @@
                 Y: =40
                 ZIndex: =2
 
-        DataCard12_1 As dataCard.blankCard:
+            Label2_18 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Visible: =false
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
+        DataCard12_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =237
+            Visible: =false
             Width: =1366
             X: =0
             Y: =8
             ZIndex: =10
 
-            Label1_20 As label:
+            Label1_31 As label:
                 Text: ="Request History"
                 Width: =237
                 X: =40
                 Y: =40
                 ZIndex: =1
 
-            txtReqHistory_1 As text:
+            txtReqHistory_2 As text:
                 Default: =
                 Height: =130
                 Mode: =TextMode.MultiLine
@@ -302,7 +456,16 @@
                 Y: =40
                 ZIndex: =2
 
-        DataCard13_1 As dataCard.blankCard:
+            Label2_19 As label:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =20
+                Text: ="*"
+                Width: =20
+                X: =26
+                Y: =50
+                ZIndex: =3
+
+        DataCard13_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -313,68 +476,249 @@
             Y: =9
             ZIndex: =11
 
-            btnSubmit_1 As button:
+            btnSubmit_2 As button:
                 Fill: =RGBA(99, 139, 44, 1)
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
+                OnSelect: |-
+                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment_2.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText),isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
+                    
+                    
+                    Set(
+                        dataSaved,
+                        !dataSaved
+                    );
+                    Set(
+                        msgText,
+                        "Please wait till saving your data..."
+                    );
+                    UpdateContext(
+                        {
+                            reqNo: "IS" & RandBetween(
+                                1000,
+                                9999
+                            )
+                        }
+                    );
+                    If(isblankdrpDept&&isblankdrpSubDept&&isblankdrpRole&&isblankdrpEmpT&&isblanktxtProj&&isttachmentblank&&isttManachmentblank,If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
+                                            },
+                                            'Sub Department': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
+                                            },
+                                            'Job Role': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
+                                            },
+                                            'Project Specific Hiring': chkProjectSpecHiring_2.Value,
+                                            'Project Name': txtProjectName_2.Text,
+                                            'Request Status': "Draft",
+                                            Comments: txtComments_2.Text,
+                                            'Request History': txtReqHistory_2.Text
+                                        }
+                                    )
+                                }
+                            );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                             contentBytes: First(DataCardValue_JD_1.Attachments).Value,
+                             name: First(DataCardValue_JD_1.Attachments).Name
+                         });
+                    ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    );,Set(
+                        msgText,
+                        "Please fill mandatory fileds & submit the form"
+                    ););
+                    /*If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment.SelectedText.ID,
+                                                Value: drpDepartment.SelectedText.DepartmentName
+                                            },
+                                            SubDepartment: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment.SelectedText.ID,
+                                                Value: drpSubDepartment.SelectedText.SubDepartmentName
+                                            },
+                                            Role: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole.SelectedText.ID,
+                                                Value: drpRole.SelectedText.Role
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType.SelectedText.ID,
+                                                Value: drpEmployeeType.SelectedText.EmploymentType
+                                            },
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
+                                            ProjectName: txtProjectName.Text,
+                                            RequestStatus: "Draft",
+                                            Comments: txtComments.Text,
+                                            RequestHistory: txtReqHistory.Text
+                                        }
+                                    )
+                                }
+                            );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                             contentBytes: First(DataCardValue_JD.Attachments).Value,
+                             name: First(DataCardValue_JD.Attachments).Name
+                         });
+                    ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    );*/
                 Text: ="Submit"
                 X: =768
                 Y: =30
                 ZIndex: =1
 
-            btnCancel_1 As button:
+            btnCancel_2 As button:
                 Fill: =RGBA(172, 62, 11, 1)
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
-                Text: ="Button"
+                OnSelect: =Navigate(HomeScreen,ScreenTransition.None);
+                Text: ="Cancel"
                 X: =987
                 Y: =30
                 ZIndex: =2
 
-            btnSave_1 As button:
+            btnSave_2 As button:
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =Set(dataSaved,!dataSaved);
-                    Set(msgText,"")
-                    UpdateContext({reqNo:"IS"&RandBetween(1000,9999)});
-                    If(IsError(Patch(ResourceRequest,Defaults(ResourceRequest),{RequestNumber:reqNo,Department:{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'},
-                                            'Sub Department':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpSubDepartment_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'},
-                                            'Job Role':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpRole_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'},
-                                            'Employment Type':{'@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                            Id:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                            Value:drpEmployeeType_1.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'},
-                                            'Project Specific Hiring':chkProjectSpecHiring_1.Value,
-                                            'Project Name':txtProjectName_1.Text,
-                                            'Request Status':"Draft",
-                                            Comments:txtComments_1.Text,
-                                            'Request History':txtReqHistory_1.Text
-                                  });Set(dataSaved,!dataSaved),Notify("Item was not saved,please check your data once"),))
+                    =Set(
+                        dataSaved,
+                        !dataSaved
+                    );
+                    Set(
+                        msgText,
+                        "Please wait till saving your data..."
+                    );
+                    UpdateContext(
+                        {
+                            reqNo: "IS" & RandBetween(
+                                1000,
+                                9999
+                            )
+                        }
+                    );
+                    If(
+                        IsError(
+                            UpdateContext(
+                                {
+                                    recentItem: Patch(
+                                        ResourceRequest,
+                                        Defaults(ResourceRequest),
+                                        {
+                                            RequestNumber: reqNo,
+                                            Department: {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
+                                            },
+                                            'Sub Department': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
+                                            },
+                                            'Job Role': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
+                                            },
+                                            'Employment Type': {
+                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
+                                            },
+                                            'Project Specific Hiring': chkProjectSpecHiring_2.Value,
+                                            'Project Name': txtProjectName_2.Text,
+                                            'Request Status': "Draft",
+                                            Comments: txtComments_2.Text,
+                                            'Request History': txtReqHistory_2.Text
+                                        }
+                                    )
+                                }
+                            );
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
+                             contentBytes: First(DataCardValue_JD_1.Attachments).Value,
+                             name: First(DataCardValue_JD_1.Attachments).Name
+                            }});
+                    ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
+                        ),
+                       
+                        Set(
+                            msgText,
+                            "Item was not saved,please check your data once"
+                        ),
+                        Set(
+                            msgText,
+                            "Item was save successfully."
+                        )
+                    );
                 Text: ="Save"
                 X: =552
                 Y: =30
                 ZIndex: =3
 
-    HeaderComponent_3 As HeaderComponent:
+    HeaderComponent_4 As HeaderComponent:
         AppName: ="Resource Request"
         UserName: =User().FullName
         ZIndex: =2
 
-    LoadingMask_1 As groupContainer.manualLayoutContainer:
+    LoadingMask_2 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(18,19,20,0.5)
         Height: =App.Height
         Visible: =dataSaved
         Width: =App.Width
         ZIndex: =3
 
-        LoadingContent_1 As rectangle:
+        LoadingContent_2 As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =65
             Width: =735
@@ -382,12 +726,20 @@
             Y: =372
             ZIndex: =1
 
-        Label1_21 As label:
+        lblMsg_1 As label:
             Align: =Align.Center
             Height: =42
-            Text: ="Please wait till saving your data..."
+            Text: =msgText
             Width: =442
             X: =545
             Y: =384
             ZIndex: =2
+
+        Icon1_1 As icon.Cancel:
+            Color: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.Cancel
+            OnSelect: =Set(dataSaved,!dataSaved)
+            X: =1284
+            Y: =6
+            ZIndex: =3
 
