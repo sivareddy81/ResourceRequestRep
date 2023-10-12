@@ -14,39 +14,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 26,
-                  "charOffset": 208,
+                  "charLength": 8,
+                  "charOffset": 694,
                   "snippet": {
-                    "text": "'EV_Capex SharePoint List'"
+                    "text": "IsFolder"
                   }
                 }
               },
               "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
+                "member": "OnVisible",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
             "arguments": [
-              "EV_Capex SharePoint List"
+              "IsFolder"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
           "ruleIndex": 0
         },
         {
@@ -54,26 +54,26 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 62,
-                  "charOffset": 201,
+                  "charLength": 1,
+                  "charOffset": 703,
                   "snippet": {
-                    "text": "Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User)"
+                    "text": "="
                   }
                 }
               },
               "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
+                "member": "OnVisible",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
@@ -84,9 +84,9 @@
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 1
         },
         {
@@ -94,237 +94,39 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 12,
-                  "charOffset": 235,
+                  "charLength": 2,
+                  "charOffset": 711,
                   "snippet": {
-                    "text": "'Created By'"
+                    "text": "&&"
                   }
                 }
               },
               "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
+                "member": "OnVisible",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Created By"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 247,
-                  "snippet": {
-                    "text": ".Email"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 254,
-                  "snippet": {
-                    "text": "gbl_User"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "gbl_User"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 253,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 264,
-                  "snippet": {
-                    "text": "Created"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Created"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 98,
-                  "charOffset": 196,
-                  "snippet": {
-                    "text": "Sort(Filter('EV_Capex SharePoint List','Created By'.Email=gbl_User),Created,\nSortOrder.Descending)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sort"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 1
         },
         {
@@ -332,2121 +134,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Default"
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.Default",
+                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 17,
-                  "charOffset": 0,
+                  "charLength": 2,
+                  "charOffset": 758,
                   "snippet": {
-                    "text": "gbl_varLastRecord"
+                    "text": "&&"
                   }
                 }
               },
               "properties": {
-                "member": "Default",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
+                "member": "OnVisible",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen"
               }
             }
           ],
           "message": {
             "arguments": [
-              "gbl_varLastRecord"
+              "Filter"
             ],
             "id": "issue"
           },
           "properties": {
-            "level": "High"
+            "level": "Medium"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".ID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ID_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ID"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ID_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".ID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ID_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ID"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 41,
-                  "snippet": {
-                    "text": ".'Project Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Project Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 89,
-                  "snippet": {
-                    "text": ".'Project Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Project Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 33,
-                  "charOffset": 76,
-                  "snippet": {
-                    "text": "Left(ThisItem.'Project Name', 25)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Left"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-SuggestRemoteExecutionHint",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 127,
-                  "snippet": {
-                    "text": ".'Project Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Project Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 117,
-                  "charOffset": 26,
-                  "snippet": {
-                    "text": "If(Len(ThisItem.'Project Name') > 25, Concatenate(Left(ThisItem.'Project Name', 25), \"...\"), ThisItem.'Project Name')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Project Name'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ProjectName_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Project Name"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Original CER (K€)'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Original CER (K€)"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Original CER (K€)'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CERAmount_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Original CER (K€)"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 24,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Original One off (K€)'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_OTE_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Original One off (K€)"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_OTE_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Total Revised One off (K€)'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_OTE_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Total Revised One off (K€)"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 45,
-                  "snippet": {
-                    "text": ".Country"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Country"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 118,
-                  "snippet": {
-                    "text": ".Country"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Country"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 126,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 66,
-                  "charOffset": 92,
-                  "snippet": {
-                    "text": "Left(\n            ThisItem.Country.Value,\n            24\n        )"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Left"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 223,
-                  "snippet": {
-                    "text": ".Country"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Country"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 231,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 214,
-                  "charOffset": 25,
-                  "snippet": {
-                    "text": "If(\n    Len(ThisItem.Country.Value) > 24,\n    Concatenate(\n        Left(\n            ThisItem.Country.Value,\n            24\n        ),\n        \"...\"\n    ),\n    //ThisItem.'Test (Test0)'\n    ThisItem.Country.Value\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Country"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Country"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_CurrentApprover_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Plant"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Plant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Plant"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Plant"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_Plant_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_Plant_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Business Category'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Business Category"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Business Category'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Business Category"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_BusinessCat_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Type of Investment'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Type of Investment"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Type of Investment'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Type of Investment"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_InvestmentTypeValue"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Approval Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Approval Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 26,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Approval Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Approval Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 26,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.lbl_ApprovalStatus_Value"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 85,
-                  "snippet": {
-                    "text": ".'Request Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Request Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 183,
-                  "snippet": {
-                    "text": ".'Is Revision'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Is Revision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 282,
-                  "snippet": {
-                    "text": "frm_NewCapexRequest"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "frm_NewCapexRequest"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 29,
-                  "charOffset": 273,
-                  "snippet": {
-                    "text": "ViewForm(frm_NewCapexRequest)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ViewForm"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 326,
-                  "snippet": {
-                    "text": "'New Capex Request Screen'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "New Capex Request Screen"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 29,
-                  "snippet": {
-                    "text": "'EV_Capex SharePoint List'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EV_Capex SharePoint List"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_ViewForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 35,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "Refresh('EV_Capex SharePoint List')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_ViewForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Refresh"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 30,
-                  "snippet": {
-                    "text": ".'Request Status'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Request Status"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 77,
-                  "snippet": {
-                    "text": ".'Is Revision'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Is Revision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 148,
-                  "snippet": {
-                    "text": "frm_NewCapexRequest"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "frm_NewCapexRequest"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.img_Icon_Editform.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 178,
-                  "snippet": {
-                    "text": "'New Capex Request Screen'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.img_Icon_Editform"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "New Capex Request Screen"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 26,
-                  "charOffset": 35,
-                  "snippet": {
-                    "text": "'EV_Capex SharePoint List'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "EV_Capex SharePoint List"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 35,
-                  "charOffset": 27,
-                  "snippet": {
-                    "text": "Refresh('EV_Capex SharePoint List')"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Refresh"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 3,
-                  "charOffset": 87,
-                  "snippet": {
-                    "text": ".ID"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ID"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.bttn_EditForm.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 64,
-                  "snippet": {
-                    "text": "Set(gbl_ItemID,ThisItem.ID)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist.bttn_EditForm"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2487,796 +208,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 694,
-                  "snippet": {
-                    "text": "IsFolder"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "IsFolder"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 703,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 711,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 758,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ID"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_ProjectName"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CERAmount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_OTE_Amount"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.con_GalleryHeader.lbl_CurrentApprover"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Sub Department_DataCard1'.DataCardValue4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Sub Department_DataCard1'.DataCardValue4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Sub Department_DataCard1'.DataCardValue4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Employment Type_DataCard1'.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Employment Type_DataCard1'.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Employment Type_DataCard1'.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Department_DataCard1.DataCardValue3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Department_DataCard1.DataCardValue3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Department_DataCard1.DataCardValue3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Job Role_DataCard1'.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Job Role_DataCard1'.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Job Role_DataCard1'.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Specific Hiring_DataCard1'.DataCardValue7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Specific Hiring_DataCard1'.DataCardValue7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Specific Hiring_DataCard1'.DataCardValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Name_DataCard1'.DataCardValue8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Name_DataCard1'.DataCardValue8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.'Project Name_DataCard1'.DataCardValue8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Comments_DataCard1.DataCardValue10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Comments_DataCard1.DataCardValue10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Comments_DataCard1.DataCardValue10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Attachments_DataCard1.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Attachments_DataCard1.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.con_MainSection_1.Con_Gallery_1.NewResourceRequestForm.Attachments_DataCard1.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen3",
-                "type": "Screen3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen3.gal_CapexRequestlist.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen3",
-                "type": "Screen3.gal_CapexRequestlist"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -3306,7 +238,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3336,7 +268,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3366,7 +298,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3396,7 +328,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3426,7 +358,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3456,7 +388,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3486,7 +418,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3516,7 +448,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3546,7 +478,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3576,7 +508,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3606,277 +538,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3906,7 +568,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3936,7 +598,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3966,7 +628,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3996,67 +658,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4086,7 +688,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4116,26 +718,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpDepartment_2"
               }
             }
           ],
@@ -4146,56 +748,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard5_2.drpSubDepartment_2"
               }
             }
           ],
@@ -4206,26 +778,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "EditResourceRequestScreen",
-                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpRole_2"
               }
             }
           ],
@@ -4235,8 +807,98 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard6_2.drpEmployeeType_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard7_2.txtProjectName_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.DataCardValue_JD_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4266,7 +928,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4296,26 +958,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gbl_Item"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gbl_Item",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gbl_Item",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.DataCardValue_Manager_1"
               }
             }
           ],
@@ -4325,27 +987,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gbl_RequestStatus"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gbl_RequestStatus",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gbl_RequestStatus",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
               }
             }
           ],
@@ -4355,27 +1017,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gbl_IsRevision"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gbl_IsRevision",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gbl_IsRevision",
-                "module": "App",
-                "type": "App"
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles"
               }
             }
           ],
@@ -4385,27 +1047,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.gbl_ItemID"
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.gbl_ItemID",
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "gbl_ItemID",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
               }
             }
           ],
@@ -4415,8 +1077,158 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard10_2.Gallery_ManagerApprovalFiles.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard11_2.txtComments_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard12_2.txtReqHistory_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.LoadingMask_2.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.LoadingMask_2.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4446,97 +1258,7 @@
             "level": "Medium"
           },
           "ruleId": "app-CollectDelegatableDataSource",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Home Screen",
-                "type": "'Home Screen'.ScreenContainer2.con_MainSection.Con_Gallery.lbl_MessageNoRecord"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 13
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_UserName_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 13
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1.Size"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1.Size",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Size",
-                "module": "New Resouce Request",
-                "type": "'New Resouce Request'.ScreenContainer2_1.HeaderContainer2_1.lbl_HeaderName_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 13
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -4566,7 +1288,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -4596,7 +1318,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -4604,86 +1326,6 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
-            {
-              "id": "app-ErrInvalidName",
-              "messageStrings": {
-                "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleCtxtVariableTypes",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
             {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
@@ -4723,37 +1365,21 @@
               }
             },
             {
-              "id": "acc-FocusBorderShouldBeVisible",
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
                 "issue": {
-                  "text": "Focus isn't showing"
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Change the FocusedBorderThickness property to be more than 0."
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
                 "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
-              }
-            },
-            {
-              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-              "messageStrings": {
-                "issue": {
-                  "text": "Missing tab stop"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+                "primaryCategory": "formula",
+                "whyFix": ""
               }
             },
             {
@@ -4774,37 +1400,20 @@
               }
             },
             {
-              "id": "acc-ReadableScreenNameNeeded",
+              "id": "acc-TabIndexShouldBeDefinedForInteractiveControl",
               "messageStrings": {
                 "issue": {
-                  "text": "Revise screen name"
+                  "text": "Missing tab stop"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
-              }
-            },
-            {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unused variable"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove the unused variable."
+                  "Set TabIndex to 0 or greater to ensure that interactive elements have a tab stop."
                 ],
                 "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+                "primaryCategory": "accessibility",
+                "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
               }
             },
             {
@@ -4825,20 +1434,20 @@
               }
             },
             {
-              "id": "app-InefficientDelayLoading",
+              "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
-                  "text": "Inefficient delay loading"
+                  "text": "Unused variable"
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Use variables, collections, and navigation context to share state across screens instead."
+                  "Remove the unused variable."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             }
           ],
