@@ -1095,7 +1095,7 @@
       "UserName",
       "AppName"
     ],
-    "LastModifiedTimestamp": "638326263520048124",
+    "LastModifiedTimestamp": "638326715346192954",
     "Name": "HeaderComponent",
     "Rules": [
       {
@@ -1165,7 +1165,7 @@
       "Name": "UserName",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1174,7 +1174,7 @@
       "Name": "AppName",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -1185,7 +1185,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638326263520048124",
+  "LastModifiedTimestamp": "638326715346192954",
   "Name": "fc89a51ff6144d928b5d10d56be92c72",
   "OverridableProperties": {},
   "Version": "638321549765942183"

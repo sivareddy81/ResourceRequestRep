@@ -1275,6 +1275,14 @@
           "InvariantPropertyName": "BorderThickness",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -1287,7 +1295,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCard12",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1339,6 +1347,11 @@
           "Category": "Design",
           "PropertyName": "BorderThickness",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Visible",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
@@ -1367,7 +1380,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataCard13",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
