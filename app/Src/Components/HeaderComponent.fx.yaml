@@ -2,6 +2,7 @@ HeaderComponent As CanvasComponent:
     AppName: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
+    image: =SampleImage
     UserName: ="Text"
     Width: =1366
     X: =0
@@ -26,8 +27,8 @@ HeaderComponent As CanvasComponent:
             Size: =16
             Text: =HeaderComponent.UserName
             Width: =342
-            X: =1010
-            Y: =25
+            X: =937
+            Y: =30
             ZIndex: =2
 
         lblAppName As label:
@@ -41,4 +42,16 @@ HeaderComponent As CanvasComponent:
             X: =307
             Y: =25
             ZIndex: =3
+
+        Image3 As image:
+            Height: =60
+            Image: =HeaderComponent.image
+            RadiusBottomLeft: =60
+            RadiusBottomRight: =60
+            RadiusTopLeft: =60
+            RadiusTopRight: =60
+            Width: =60
+            X: =1299
+            Y: =19
+            ZIndex: =4
 

@@ -1,22 +1,30 @@
 "EditResourceRequestScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 237, 237, 1)
-    OnVisible: |
-        =Concurrent(
-            ClearCollect(
+    OnVisible: |-
+        =ClearCollect(colDepartments,{ID:0,DepartmentName:"Select Department"});
+        ClearCollect(
+                colEmpType,{ID:0,EmploymentType:"Select"}
+                );
+        ClearCollect(
+                colJobRoles,{ID:0,Role:"Select Role"});
+        Concurrent(
+              
+          Collect(
                 colDepartments,
                 ShowColumns(
                     Departments,"DepartmentName","ID"
                    
                 )
             ),
-            ClearCollect(
+        
+            Collect(
                 colJobRoles,
                 ShowColumns(
                     JobRole,
                     "Role","ID"
                 )
             ),
-              ClearCollect(
+              Collect(
                 colEmpType,
                 ShowColumns(
                     Employment,
@@ -26,6 +34,8 @@
             Set(dataSaved,false),
             ClearCollect(colManagerApprovals,Filter(ManagerApproval, IsFolder = false && StartsWith('Folder path', "ManagerApproval")&&RefResourceID=editViewItem))
         );
+        Reset(DataCardValue_JD_1);
+        Reset(DataCardValue_Manager_1);
 
     EditResourceRequestCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -66,7 +76,7 @@
             drpDepartment_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
+                Default: =LookUp(ResourceRequest,ID=editViewItem,Department).Value
                 Items: =colDepartments
                 Width: =320
                 X: =299
@@ -83,7 +93,7 @@
             drpSubDepartment_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
+                Default: =LookUp(ResourceRequest,ID=editViewItem,'Sub Department').Value
                 Items: =ShowColumns(Filter(SubDepartments,DepartmentName.Value=drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'),"SubDepartmentName","ID")
                 Width: =405
                 X: =927
@@ -130,7 +140,7 @@
             drpEmployeeType_2 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
+                Default: =LookUp(ResourceRequest,ID=editViewItem,'Employment Type').Value
                 Items: =colEmpType
                 Width: =405
                 X: =927
@@ -146,8 +156,8 @@
 
             drpRole_2 As dropdown:
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
-                Items: =JobRole
+                Default: =LookUp(ResourceRequest,ID=editViewItem,'Job Role').Value
+                Items: =colJobRoles
                 Width: =320
                 X: =299
                 Y: =40
@@ -191,6 +201,7 @@
                 ZIndex: =1
 
             chkProjectSpecHiring_2 As checkbox:
+                Default: =LookUp(ResourceRequest,ID=editViewItem,'Project Specific Hiring')
                 Height: =40
                 Text: ="Yes/No"
                 X: =299
@@ -206,7 +217,7 @@
                 ZIndex: =3
 
             txtProjectName_2 As text:
-                Default: =
+                Default: =LookUp(ResourceRequest,ID=editViewItem,'Project Name')
                 Visible: =chkProjectSpecHiring_2.Value=true
                 Width: =405
                 X: =927
@@ -257,13 +268,15 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
-                Items: =LookUp(ResourceRequest,ID=editViewItem).Attachments
+                Items: =//LookUp(ResourceRequest,ID=editViewItem).Attachments
                 MaxAttachments: =1
                 MaxAttachmentSize: =1
+                OnRemoveFile: =
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
+                Reset: =true
                 Tooltip: ="Upload files"
                 Width: =555
                 X: =305
@@ -287,7 +300,6 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
-                Visible: =false
                 Width: =454
                 X: =872
                 Y: =27
@@ -316,7 +328,7 @@
                 Icon5_1 As icon.CancelBadge:
                     Height: =30
                     Icon: =Icon.CancelBadge
-                    OnSelect: =
+                    OnSelect: =RemoveIf(ResourceRequest,ID=ThisItem.Id)
                     Width: =30
                     X: =402
                     Y: =10
@@ -357,11 +369,12 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
-                Items: =colManagerApprovals
+                Items: =
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
+                Reset: =true
                 Tooltip: ="Upload files"
                 Width: =567
                 X: =299
@@ -378,6 +391,7 @@
                 ZIndex: =3
 
             "Gallery_ManagerApprovalFiles As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderThickness: =1
                 DelayItemLoading: =true
                 Height: =210
                 Items: =colManagerApprovals
@@ -403,23 +417,8 @@
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =1
 
-                Title1 As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =31
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.'File name with extension'
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =265
-                    X: =67
-                    Y: =10
-                    ZIndex: =2
-
                 Separator1 As rectangle:
-                    Height: =4
+                    Height: =2
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
@@ -436,7 +435,8 @@
 
                 HtmlText1 As htmlViewer:
                     Height: =35
-                    HtmlText: ="<a href='"&ThisItem.'Link to item'&"'><b><font color=blue>"&ThisItem.'File name with extension'&"</font></b></a>."
+                    HtmlText: |-
+                        ="<a href='https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item'&"'><b><font color=blue>"&ThisItem.'File name with extension'&"</font></b></a>."
                     OnSelect: =Select(Parent);Download(ThisItem.'Link to item');
                     Width: =340
                     X: =46
@@ -463,7 +463,7 @@
                 ZIndex: =1
 
             txtComments_2 As text:
-                Default: =
+                Default: =LookUp(ResourceRequest,ID=editViewItem,Comments)
                 Height: =130
                 Mode: =TextMode.MultiLine
                 Width: =921
@@ -535,7 +535,7 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment_2.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText),isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
+                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment_2.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText),isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0||CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0||CountRows(colManagerApprovals)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
                     
                     
                     Set(
@@ -560,7 +560,7 @@
                                 {
                                     recentItem: Patch(
                                         ResourceRequest,
-                                        Defaults(ResourceRequest),
+                                        LookUp(ResourceRequest,ID=editViewItem),
                                         {
                                             RequestNumber: reqNo,
                                             Department: {
@@ -592,10 +592,10 @@
                                     )
                                 }
                             );
-                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
+                            If(CountRows(DataCardValue_JD_1.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
                              contentBytes: First(DataCardValue_JD_1.Attachments).Value,
                              name: First(DataCardValue_JD_1.Attachments).Name
-                         });
+                         }));
                     ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
                         ),
                        
@@ -707,9 +707,9 @@
                                 {
                                     recentItem: Patch(
                                         ResourceRequest,
-                                        Defaults(ResourceRequest),
+                                        LookUp(ResourceRequest,ID=editViewItem),
                                         {
-                                            RequestNumber: reqNo,
+                                            
                                             Department: {
                                                 '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                                                 Id: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
@@ -739,10 +739,10 @@
                                     )
                                 }
                             );
-                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
+                            If(CountRows(DataCardValue_JD_1.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
                              contentBytes: First(DataCardValue_JD_1.Attachments).Value,
                              name: First(DataCardValue_JD_1.Attachments).Name
-                            }});
+                            }}));
                     ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
                         ),
                        
@@ -762,6 +762,7 @@
 
     HeaderComponent_4 As HeaderComponent:
         AppName: ="Resource Request"
+        image: =User().Image
         UserName: =User().FullName
         ZIndex: =2
 

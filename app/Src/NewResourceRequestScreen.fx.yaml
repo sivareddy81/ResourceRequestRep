@@ -1,30 +1,40 @@
 "NewResourceRequestScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(237, 237, 237, 1)
-    OnVisible: |-
-        =Concurrent(
-            ClearCollect(
+    OnVisible: |
+        =ClearCollect(colDepartments,{ID:0,DepartmentName:"Select Department"});
+        ClearCollect(
+                colEmpType,{ID:0,EmploymentType:"Select"}
+                );
+        ClearCollect(
+                colJobRoles,{ID:0,Role:"Select Role"});
+        Concurrent(
+              
+          Collect(
                 colDepartments,
                 ShowColumns(
                     Departments,"DepartmentName","ID"
                    
                 )
             ),
-            ClearCollect(
+        
+            Collect(
                 colJobRoles,
                 ShowColumns(
                     JobRole,
                     "Role","ID"
                 )
             ),
-              ClearCollect(
+              Collect(
                 colEmpType,
                 ShowColumns(
                     Employment,
                    "EmploymentType","ID"
                 )
             ),
-            Set(dataSaved,false)
-        )
+            Set(dataSaved,false),
+            Set(editViewItem,Blank())
+            
+        );
 
     NewResourceRequestCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -65,7 +75,7 @@
             drpDepartment As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
+                Default: ="Select Department"
                 Items: =colDepartments
                 Width: =320
                 X: =299
@@ -129,7 +139,7 @@
             drpEmployeeType As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
+                Default: ="Select"
                 Items: =colEmpType
                 Width: =405
                 X: =927
@@ -145,8 +155,8 @@
 
             drpRole As dropdown:
                 ChevronBackground: =RGBA(0, 18, 107, 1)
-                Default: =
-                Items: =JobRole
+                Default: ="Select Role"
+                Items: =colJobRoles
                 Width: =320
                 X: =299
                 Y: =40
@@ -618,10 +628,10 @@
                                     )
                                 }
                             );
-                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
+                            If(CountRows(DataCardValue_JD.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
                              contentBytes: First(DataCardValue_JD.Attachments).Value,
                              name: First(DataCardValue_JD.Attachments).Name
-                            }});
+                            }}));
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
                         ),
                        

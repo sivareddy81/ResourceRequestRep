@@ -2453,6 +2453,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.Icon5_1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.Icon5_1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 27,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.Icon5_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditResourceRequestScreen.OnVisible"
                 }
               ],
@@ -2463,7 +2504,7 @@
                 },
                 "region": {
                   "charLength": 8,
-                  "charOffset": 494,
+                  "charOffset": 694,
                   "snippet": {
                     "text": "IsFolder"
                   }
@@ -2503,7 +2544,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 503,
+                  "charOffset": 703,
                   "snippet": {
                     "text": "="
                   }
@@ -2543,7 +2584,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 511,
+                  "charOffset": 711,
                   "snippet": {
                     "text": "&&"
                   }
@@ -2583,7 +2624,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 558,
+                  "charOffset": 758,
                   "snippet": {
                     "text": "&&"
                   }
