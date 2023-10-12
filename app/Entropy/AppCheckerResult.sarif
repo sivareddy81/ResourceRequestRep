@@ -4202,6 +4202,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "EditResourceRequestScreen",
+                "type": "EditResourceRequestScreen.EditResourceRequestCanvas.DataCard8_2.Gallery_JobDescriptionFiles"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.gbl_Item"
                 }
               ],

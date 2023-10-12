@@ -257,7 +257,7 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
-                Items: =
+                Items: =LookUp(ResourceRequest,ID=editViewItem).Attachments
                 MaxAttachments: =1
                 MaxAttachmentSize: =1
                 PaddingBottom: =5
@@ -278,6 +278,60 @@
                 X: =26
                 Y: =50
                 ZIndex: =3
+
+            "Gallery_JobDescriptionFiles As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =210
+                Items: =LookUp(ResourceRequest,ID=editViewItem).Attachments
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =52
+                Visible: =false
+                Width: =454
+                X: =872
+                Y: =27
+                ZIndex: =4
+
+                Image2_1 As image:
+                    Height: =30
+                    Image: =ThisItem.AbsoluteUri
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =8
+                    RadiusBottomRight: =8
+                    RadiusTopLeft: =8
+                    RadiusTopRight: =8
+                    Width: =30
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                Separator1_1 As rectangle:
+                    Height: =4
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Icon5_1 As icon.CancelBadge:
+                    Height: =30
+                    Icon: =Icon.CancelBadge
+                    OnSelect: =
+                    Width: =30
+                    X: =402
+                    Y: =10
+                    ZIndex: =7
+
+                HtmlText1_1 As htmlViewer:
+                    Height: =35
+                    HtmlText: |-
+                        ="<a href='https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.AbsoluteUri&"'><b><font color=blue>"&ThisItem.DisplayName&"</font></b></a>."
+                    OnSelect: |-
+                        =Select(Parent);Download("https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.AbsoluteUri);
+                    Width: =340
+                    X: =46
+                    Y: =11
+                    ZIndex: =8
 
         DataCard10_2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -303,7 +357,7 @@
                 DisplayMode: =Parent.DisplayMode
                 Height: =210
                 IsInDataCard: =true
-                Items: =
+                Items: =colManagerApprovals
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5

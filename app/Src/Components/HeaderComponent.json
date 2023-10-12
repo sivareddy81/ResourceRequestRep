@@ -68,7 +68,7 @@
             "Name": "Rectangle2",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 217,
+            "PublishOrderIndex": 223,
             "Rules": [
               {
                 "Category": "Design",
@@ -269,7 +269,7 @@
             "Name": "lblAppName",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 218,
+            "PublishOrderIndex": 224,
             "Rules": [
               {
                 "Category": "Data",
@@ -607,7 +607,7 @@
             "Name": "lblUserDisplayName",
             "Parent": "HeaderContainer",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 219,
+            "PublishOrderIndex": 225,
             "Rules": [
               {
                 "Category": "Data",
@@ -919,7 +919,7 @@
         "Name": "HeaderContainer",
         "Parent": "HeaderComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 216,
+        "PublishOrderIndex": 222,
         "Rules": [
           {
             "Category": "Design",
