@@ -424,7 +424,7 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment.SelectedText),isblankdrpRole:!IsBlank(drpRole.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType.SelectedText),isblanktxtProj:If(chkProjectSpecHiring.Value=true,!IsBlank(txtProjectName.Text)),isttachmentblank:If(CountRows(DataCardValue_JD.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory.Text)});
+                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment.SelectedText)&&drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department",isblankdrpSubDept:!IsBlank(drpSubDepartment.SelectedText),isblankdrpRole:!IsBlank(drpRole.SelectedText)&&drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'<>"Select Role",isblankdrpEmpT:!IsBlank(drpEmployeeType.SelectedText)&&drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'<>"Select",isblanktxtProj:If(chkProjectSpecHiring.Value=true,!IsBlank(txtProjectName.Text)),isttachmentblank:If(CountRows(DataCardValue_JD.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory.Text)});
                     
                     
                     Set(
@@ -494,8 +494,9 @@
                         ),
                         Set(
                             msgText,
-                            "Item was save successfully."
-                        )
+                            "Item was saved successfully."
+                        );Set(dataSaved,!dataSaved);
+                        Navigate(HomeScreen,ScreenTransition.None);
                     );,Set(
                         msgText,
                         "Please fill mandatory fileds & submit the form"
