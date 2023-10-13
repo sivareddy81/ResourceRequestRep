@@ -552,10 +552,34 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =UpdateContext({isblankdrpDept:!IsBlank(
-                        drpDepartment_2.SelectedText)&&drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department",isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText)&&drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'<>"Select Role",isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText)&&drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'<>"Select",isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0||CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0||CountRows(colManagerApprovals)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
-                    
-                    
+                    =UpdateContext(
+                        {
+                            isblankdrpDept: !IsBlank(drpDepartment_2.SelectedText) && drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName' <> "Select Department",
+                            isblankdrpSubDept: !IsBlank(drpSubDepartment_2.SelectedText),
+                            isblankdrpRole: !IsBlank(drpRole_2.SelectedText) && drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole' <> "Select Role",
+                            isblankdrpEmpT: !IsBlank(drpEmployeeType_2.SelectedText) && drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType' <> "Select",
+                            isblanktxtProj: If(
+                                chkProjectSpecHiring_2.Value = true,
+                                !IsBlank(txtProjectName_2.Text)
+                            ),
+                            isttachmentblank: If(
+                                CountRows(DataCardValue_JD_1.Attachments) > 0 || CountRows(
+                                    LookUp(
+                                        ResourceRequest,
+                                        ID = editViewItem
+                                    ).Attachments
+                                ) > 0,
+                                true,
+                                false
+                            ),
+                            isttManachmentblank: If(
+                                CountRows(DataCardValue_Manager_1.Attachments) > 0 || CountRows(colManagerApprovals) > 0,
+                                true,
+                                false
+                            ),
+                            isblankReqHis: !IsBlank(txtReqHistory_2.Text)
+                        }
+                    );
                     Set(
                         dataSaved,
                         !dataSaved
@@ -572,63 +596,96 @@
                             )
                         }
                     );
-                    If(isblankdrpDept&&isblankdrpSubDept&&isblankdrpRole&&isblankdrpEmpT&&isblanktxtProj&&isttachmentblank&&isttManachmentblank,If(
-                        IsError(
-                            UpdateContext(
-                                {
-                                    recentItem: Patch(
-                                        ResourceRequest,
-                                        LookUp(ResourceRequest,ID=editViewItem),
+                    If(
+                        isblankdrpDept && isblankdrpSubDept && isblankdrpRole && isblankdrpEmpT && isblanktxtProj && isttachmentblank && isttManachmentblank,
+                        If(
+                            IsError(
+                                UpdateContext(
+                                    {
+                                        recentItem: Patch(
+                                            ResourceRequest,
+                                            LookUp(
+                                                ResourceRequest,
+                                                ID = editViewItem
+                                            ),
+                                            {
+                                                RequestNumber: reqNo,
+                                                Department: {
+                                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                    Id: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                    Value: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
+                                                },
+                                                'Sub Department': {
+                                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                    Id: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                    Value: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
+                                                },
+                                                'Job Role': {
+                                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                    Id: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                    Value: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
+                                                },
+                                                'Employment Type': {
+                                                    '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                                                    Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
+                                                    Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
+                                                },
+                                                'Project Specific Hiring': chkProjectSpecHiring_2.Value,
+                                                'Project Name': txtProjectName_2.Text,
+                                                'Request Status': "Draft",
+                                                Comments: txtComments_2.Text,
+                                                'Request History': txtReqHistory_2.Text
+                                            }
+                                        )
+                                    }
+                                );
+                                If(
+                                    CountRows(DataCardValue_JD_1.Attachments) > 0,
+                                    Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(
+                                        recentItem.ID,
+                                        "JD",
                                         {
-                                            RequestNumber: reqNo,
-                                            Department: {
-                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                                Id: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                                Value: drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'
-                                            },
-                                            'Sub Department': {
-                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                                Id: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                                Value: drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'
-                                            },
-                                            'Job Role': {
-                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                                Id: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                                Value: drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'
-                                            },
-                                            'Employment Type': {
-                                                '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                                                Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
-                                                Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
-                                            },
-                                            'Project Specific Hiring': chkProjectSpecHiring_2.Value,
-                                            'Project Name': txtProjectName_2.Text,
-                                            'Request Status': "Draft",
-                                            Comments: txtComments_2.Text,
-                                            'Request History': txtReqHistory_2.Text
+                                            contentBytes: First(DataCardValue_JD_1.Attachments).Value,
+                                            name: First(DataCardValue_JD_1.Attachments).Name
                                         }
                                     )
-                                }
+                                );
+                                ForAll(
+                                    DataCardValue_Manager_1.Attachments,
+                                    Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(
+                                        recentItem.ID,
+                                        "ManagerApproval",
+                                        {
+                                            contentBytes: ThisRecord.Value,
+                                            name: ThisRecord.Name
+                                        }
+                                    )
+                                )
+                            ),
+                            Set(
+                                msgText,
+                                "Item was not saved,please check your data once"
+                            ),
+                            Set(
+                                msgText,
+                                "Item was saved successfully."
                             );
-                            If(CountRows(DataCardValue_JD_1.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
-                             contentBytes: First(DataCardValue_JD_1.Attachments).Value,
-                             name: First(DataCardValue_JD_1.Attachments).Name
-                         }));
-                    ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
-                        ),
-                       
+                            Set(
+                                dataSaved,
+                                !dataSaved
+                            );
+                            Navigate(
+                                HomeScreen,
+                                ScreenTransition.None
+                            );
+                        );
+                        ,
                         Set(
                             msgText,
-                            "Item was not saved,please check your data once"
-                        ),
-                        Set(
-                            msgText,
-                            "Item was save successfully."
-                        )
-                    );,Set(
-                        msgText,
-                        "Please fill mandatory fileds & submit the form"
-                    ););
+                            "Please fill mandatory fileds & submit the form"
+                        );
+                        
+                    );
                     /*If(
                         IsError(
                             UpdateContext(
@@ -673,7 +730,6 @@
                          });
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
                         ),
-                       
                         Set(
                             msgText,
                             "Item was not saved,please check your data once"
