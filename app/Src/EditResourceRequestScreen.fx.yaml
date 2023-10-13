@@ -299,6 +299,7 @@
                 ZIndex: =3
 
             "Gallery_JobDescriptionFiles As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderThickness: =1
                 DelayItemLoading: =true
                 Height: =210
                 Items: =LookUp(ResourceRequest,ID=editViewItem).Attachments
@@ -306,6 +307,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
+                Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0
                 Width: =454
                 X: =872
                 Y: =27
@@ -325,22 +327,22 @@
                     ZIndex: =1
 
                 Separator1_1 As rectangle:
-                    Height: =4
+                    Height: =2
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
                     ZIndex: =5
 
                 Icon5_1 As icon.CancelBadge:
-                    Height: =30
+                    Height: =15
                     Icon: =Icon.CancelBadge
                     OnSelect: |-
-                        =Set(removed,Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles.Run(editViewItem,ThisItem.Id).result);
-                        If(removed="Yes",Notify("File was deleted permanently.",NotificationType.Success));
+                        =Set(removed,Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles.Run(editViewItem).result);
+                        If(removed="Yes",Notify("File was deleted permanently.",NotificationType.Success);Refresh(ResourceRequest));
                     Visible: =If(formMode="edit",true,false)
-                    Width: =30
+                    Width: =15
                     X: =402
-                    Y: =10
+                    Y: =15
                     ZIndex: =7
 
                 HtmlText1_1 As htmlViewer:
@@ -408,6 +410,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
+                Visible: =CountRows(colManagerApprovals)>0
                 Width: =454
                 X: =878
                 Y: =30
@@ -434,15 +437,15 @@
                     ZIndex: =5
 
                 Icon5 As icon.CancelBadge:
-                    Height: =30
+                    Height: =15
                     Icon: =Icon.CancelBadge
                     OnSelect: |-
                         =RemoveIf(ManagerApproval,ID=ThisItem.ID);Remove(colManagerApprovals,ThisItem);
                         Notify("File was deleted permanently.",NotificationType.Success);
                     Visible: =If(formMode="edit",true,false)
-                    Width: =30
+                    Width: =15
                     X: =402
-                    Y: =10
+                    Y: =15
                     ZIndex: =7
 
                 HtmlText1 As htmlViewer:
@@ -549,7 +552,8 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment_2.SelectedText),isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText),isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText),isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0||CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0||CountRows(colManagerApprovals)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
+                    =UpdateContext({isblankdrpDept:!IsBlank(
+                        drpDepartment_2.SelectedText)&&drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department",isblankdrpSubDept:!IsBlank(drpSubDepartment_2.SelectedText),isblankdrpRole:!IsBlank(drpRole_2.SelectedText)&&drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'<>"Select Role",isblankdrpEmpT:!IsBlank(drpEmployeeType_2.SelectedText)&&drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'<>"Select",isblanktxtProj:If(chkProjectSpecHiring_2.Value=true,!IsBlank(txtProjectName_2.Text)),isttachmentblank:If(CountRows(DataCardValue_JD_1.Attachments)>0||CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager_1.Attachments)>0||CountRows(colManagerApprovals)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory_2.Text)});
                     
                     
                     Set(
@@ -761,7 +765,8 @@
                              contentBytes: First(DataCardValue_JD_1.Attachments).Value,
                              name: First(DataCardValue_JD_1.Attachments).Name
                             }}));
-                    ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
+                    ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}));
+                    Refresh(ResourceRequest);
                         ),
                        
                         Set(
@@ -770,8 +775,10 @@
                         ),
                         Set(
                             msgText,
-                            "Item was save successfully."
-                        )
+                            "Item was saved successfully."
+                        );
+                        Set(dataSaved,!dataSaved);
+                        Navigate(HomeScreen,ScreenTransition.None);
                     );
                 Text: ="Save"
                 Visible: =If(formMode="edit",true,false)
@@ -781,6 +788,7 @@
 
     HeaderComponent_4 As HeaderComponent:
         AppName: ="Resource Request"
+        homeScreen: =HomeScreen
         image: =User().Image
         UserName: =User().FullName
         ZIndex: =2
