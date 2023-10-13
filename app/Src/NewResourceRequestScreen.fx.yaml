@@ -653,6 +653,7 @@
     HeaderComponent_2 As HeaderComponent:
         AppName: ="Resource Request"
         homeScreen: =HomeScreen
+        image: =User().Image
         UserName: =User().FullName
         ZIndex: =2
 
