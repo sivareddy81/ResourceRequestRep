@@ -2,6 +2,7 @@ HeaderComponent As CanvasComponent:
     AppName: ="Text"
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
+    homeScreen: =App.ActiveScreen
     image: =SampleImage
     UserName: ="Text"
     Width: =1366
@@ -54,4 +55,20 @@ HeaderComponent As CanvasComponent:
             X: =1299
             Y: =19
             ZIndex: =4
+
+    Icon6 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        X: =96
+        Y: =18
+        ZIndex: =2
+
+    Icon7 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Home
+        OnSelect: =Navigate(HeaderComponent.homeScreen,ScreenTransition.None)
+        X: =14
+        Y: =18
+        ZIndex: =3
 
