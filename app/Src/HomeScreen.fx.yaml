@@ -163,7 +163,8 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =30
                     Icon: =Icon.Edit
-                    OnSelect: =Select(Parent);Set(editViewItem,ThisItem.ID);Navigate(EditResourceRequestScreen,ScreenTransition.None);
+                    OnSelect: |-
+                        =Select(Parent);Set(editViewItem,ThisItem.ID);Navigate(EditResourceRequestScreen,ScreenTransition.None,{formMode:"edit"});
                     Width: =30
                     X: =1290
                     Y: =6
@@ -172,7 +173,8 @@
                 Icon4 As icon.View:
                     Height: =30
                     Icon: =Icon.View
-                    OnSelect: =Select(Parent)
+                    OnSelect: |-
+                        =Select(Parent);Select(Parent);Set(editViewItem,ThisItem.ID);Navigate(EditResourceRequestScreen,ScreenTransition.None,{formMode:"view"});
                     Width: =30
                     X: =1238
                     Y: =6

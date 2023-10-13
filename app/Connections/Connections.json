@@ -1,4 +1,42 @@
 {
+  "71aa4bb4-8948-472c-8f15-f9adaf3b4250": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {
+          "value": "c2bea3a5-7369-ee11-9ae7-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "0540752a-0d93-668d-82cd-8a41c4394fa9"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+        },
+        "workflowEntityId": {
+          "value": "c2bea3a5-7369-ee11-9ae7-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "0540752a-0d93-668d-82cd-8a41c4394fa9"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+    },
+    "dependents": [],
+    "id": "71aa4bb4-8948-472c-8f15-f9adaf3b4250"
+  },
   "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
@@ -46,11 +84,12 @@
     ],
     "dependencies": {},
     "dependents": [
-      "99c95e42-b2c4-46d4-9ca3-622dde5a9ceb"
+      "71aa4bb4-8948-472c-8f15-f9adaf3b4250",
+      "ea626536-4c3d-4988-8f78-0245c5d08e75"
     ],
     "id": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
   },
-  "99c95e42-b2c4-46d4-9ca3-622dde5a9ceb": {
+  "ea626536-4c3d-4988-8f78-0245c5d08e75": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -86,6 +125,6 @@
       "shared_sharepointonline": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
     },
     "dependents": [],
-    "id": "99c95e42-b2c4-46d4-9ca3-622dde5a9ceb"
+    "id": "ea626536-4c3d-4988-8f78-0245c5d08e75"
   }
 }

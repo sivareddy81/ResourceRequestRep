@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "078f68c2-7dec-4418-992c-9e1501930d0e",
+    "Name": "Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "c2bea3a5-7369-ee11-9ae7-000d3af0601e"
+  }
+]
