@@ -156,7 +156,7 @@
             drpRole As dropdown:
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: ="Select Role"
-                DisplayMode: =If(drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department"&&IsBlank(drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'),DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department"&&!IsBlank(drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'),DisplayMode.Edit,DisplayMode.Disabled)
                 Items: =colJobRoles
                 Width: =320
                 X: =299
