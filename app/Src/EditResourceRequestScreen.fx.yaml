@@ -641,7 +641,7 @@
                                         )
                                     }
                                 );
-                                /*If(
+                                If(
                                     CountRows(DataCardValue_JD_1.Attachments) > 0,
                                     Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(
                                         recentItem.ID,
@@ -651,7 +651,7 @@
                                             name: First(DataCardValue_JD_1.Attachments).Name
                                         }
                                     )
-                                );*/
+                                );
                                  Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                                 ForAll(
                                     DataCardValue_Manager_1.Attachments,
