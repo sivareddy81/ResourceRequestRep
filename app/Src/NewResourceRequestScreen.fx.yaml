@@ -542,7 +542,7 @@
                                     )
                                 }
                             );
-                            //ForAll(DataCardValue_JD.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}));
+                            ForAll(DataCardValue_JD.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}));
                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
                         ),
