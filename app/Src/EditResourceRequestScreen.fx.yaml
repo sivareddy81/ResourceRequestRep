@@ -161,7 +161,7 @@
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =LookUp(ResourceRequest,ID=editViewItem,'Job Role').Value
-                DisplayMode: =If(formMode="edit",DisplayMode.Edit,DisplayMode.Disabled)
+                DisplayMode: =If(drpDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department"&&IsBlank(drpSubDepartment_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'),DisplayMode.Edit,DisplayMode.Disabled)
                 Items: =colJobRoles
                 Width: =320
                 X: =299
@@ -285,8 +285,8 @@
                 PaddingTop: =5
                 Reset: =true
                 Tooltip: ="Upload files"
-                Visible: =false
-                Width: =555
+                Visible: =CountRows(LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments)=0
+                Width: =579
                 X: =305
                 Y: =27
                 ZIndex: =2
@@ -309,7 +309,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
-                Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0
+                Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0||CountRows(LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments)>0
                 Width: =1021
                 X: =305
                 Y: =27
