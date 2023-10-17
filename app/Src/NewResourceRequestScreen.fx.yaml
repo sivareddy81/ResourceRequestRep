@@ -275,7 +275,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Visible: =IsBlank(CountRows(LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments))
+                Visible: =IsBlank(CountRows(LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments))||CountRows(LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments)=0
                 Width: =1011
                 X: =317
                 Y: =27
