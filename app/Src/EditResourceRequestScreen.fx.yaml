@@ -659,8 +659,7 @@
                                         recentItem.ID,
                                         "ManagerApproval",
                                         {
-                                            contentBytes: ThisRecord.Value,
-                                            name: ThisRecord.Name
+                                           file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}
                                         }
                                     )
                                 )

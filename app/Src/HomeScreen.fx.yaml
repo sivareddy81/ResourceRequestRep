@@ -102,7 +102,7 @@
             GalleryResourceReqests As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =381
-                Items: =colGalResourceRequest
+                Items: =SortByColumns(colGalResourceRequest,"ID",SortOrder.Descending)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =56
