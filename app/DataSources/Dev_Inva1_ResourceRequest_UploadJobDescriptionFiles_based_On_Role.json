@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "b189385b-499f-468e-a85a-0610d790bb5f",
+    "Name": "Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "230394cc-8d6c-ee11-8179-000d3af0601e"
+  }
+]

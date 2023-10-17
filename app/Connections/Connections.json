@@ -1,4 +1,42 @@
 {
+  "0256f5de-a2dc-4115-80aa-4638adf7af10": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {
+          "value": "230394cc-8d6c-ee11-8179-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "f587d4a2-5802-1954-f750-4bb30f2e1aef"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+        },
+        "workflowEntityId": {
+          "value": "230394cc-8d6c-ee11-8179-000d3af0601e"
+        },
+        "workflowName": {
+          "value": "f587d4a2-5802-1954-f750-4bb30f2e1aef"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
+    },
+    "dependents": [],
+    "id": "0256f5de-a2dc-4115-80aa-4638adf7af10"
+  },
   "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876": {
     "appActions": [
       "providers/PowerPlatform.Governance/Operations/Read",
@@ -47,7 +85,8 @@
     "dependencies": {},
     "dependents": [
       "c8602dda-e1ff-48f5-98bb-571f3d073578",
-      "da0a5f56-6a74-499d-ba89-6898a4cdaeac"
+      "da0a5f56-6a74-499d-ba89-6898a4cdaeac",
+      "0256f5de-a2dc-4115-80aa-4638adf7af10"
     ],
     "id": "8dc6239e-cce2-4a55-bcbf-6c3ffc9cb876"
   },

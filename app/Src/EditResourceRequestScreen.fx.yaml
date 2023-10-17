@@ -205,7 +205,7 @@
                 ZIndex: =1
 
             chkProjectSpecHiring_2 As checkbox:
-                Default: =LookUp(ResourceRequest,ID=editViewItem,'Project Specific Hiring')
+                Default: =LookUp(ResourceRequest,ID=editViewItem,ProjectSpecificHiring)
                 DisplayMode: =If(formMode="edit",DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =40
                 Text: ="Yes/No"
@@ -630,7 +630,7 @@
                                                     Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                     Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                                 },
-                                                'Project Specific Hiring': chkProjectSpecHiring_2.Value,
+                                                ProjectSpecificHiring: chkProjectSpecHiring_2.Value,
                                                 'Project Name': txtProjectName_2.Text,
                                                 'Request Status': "Draft",
                                                 Comments: txtComments_2.Text,
@@ -808,7 +808,7 @@
                                                 Id: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpEmployeeType_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                             },
-                                            'Project Specific Hiring': chkProjectSpecHiring_2.Value,
+                                            ProjectSpecificHiring: chkProjectSpecHiring_2.Value,
                                             'Project Name': txtProjectName_2.Text,
                                             'Request Status': "Draft",
                                             Comments: txtComments_2.Text,

@@ -274,7 +274,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Width: =921
+                Width: =579
                 X: =305
                 Y: =27
                 ZIndex: =2
@@ -283,10 +283,68 @@
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =20
                 Text: ="*"
+                Visible: =false
                 Width: =20
                 X: =26
                 Y: =50
                 ZIndex: =3
+
+            "Gallery_JobDescriptionFiles_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Height: =210
+                Items: =LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =52
+                Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0
+                Width: =454
+                X: =898
+                Y: =27
+                ZIndex: =4
+
+                Image2_2 As image:
+                    Height: =30
+                    Image: =ThisItem.AbsoluteUri
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =8
+                    RadiusBottomRight: =8
+                    RadiusTopLeft: =8
+                    RadiusTopRight: =8
+                    Width: =30
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                Separator1_2 As rectangle:
+                    Height: =2
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Icon5_2 As icon.CancelBadge:
+                    Height: =15
+                    Icon: =Icon.CancelBadge
+                    OnSelect: |-
+                        =Set(removed,Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles.Run(editViewItem).result);
+                        If(removed="Yes",Notify("File was deleted permanently.",NotificationType.Success);Refresh(ResourceRequest));
+                    Width: =15
+                    X: =402
+                    Y: =15
+                    ZIndex: =7
+
+                HtmlText1_2 As htmlViewer:
+                    Height: =35
+                    HtmlText: |-
+                        ="<a href='https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.AbsoluteUri&"'><b><font color=blue>"&ThisItem.DisplayName&"</font></b></a>."
+                    OnSelect: |-
+                        =Select(Parent);Download("https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.AbsoluteUri);
+                    Width: =340
+                    X: =46
+                    Y: =11
+                    ZIndex: =8
 
         DataCard10 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -424,8 +482,8 @@
                 Height: =50
                 HoverFill: =ColorFade(Self.Fill, -20%)
                 OnSelect: |-
-                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment.SelectedText)&&drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department",isblankdrpSubDept:!IsBlank(drpSubDepartment.SelectedText),isblankdrpRole:!IsBlank(drpRole.SelectedText)&&drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'<>"Select Role",isblankdrpEmpT:!IsBlank(drpEmployeeType.SelectedText)&&drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'<>"Select",isblanktxtProj:If(chkProjectSpecHiring.Value=true,!IsBlank(txtProjectName.Text)),isttachmentblank:If(CountRows(DataCardValue_JD.Attachments)>0,true,false),isttManachmentblank:If(CountRows(DataCardValue_Manager.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory.Text)});
-                    
+                    =UpdateContext({isblankdrpDept:!IsBlank(drpDepartment.SelectedText)&&drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department",isblankdrpSubDept:!IsBlank(drpSubDepartment.SelectedText),isblankdrpRole:!IsBlank(drpRole.SelectedText)&&drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole'<>"Select Role",isblankdrpEmpT:!IsBlank(drpEmployeeType.SelectedText)&&drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'<>"Select",isblanktxtProj:If(chkProjectSpecHiring.Value=true,!IsBlank(txtProjectName.Text)),isttManachmentblank:If(CountRows(DataCardValue_Manager.Attachments)>0,true,false),isblankReqHis:!IsBlank(txtReqHistory.Text)});
+                    //isttachmentblank:If(CountRows(DataCardValue_JD.Attachments)>0,true,false)
                     
                     Set(
                         dataSaved,
@@ -443,7 +501,7 @@
                             )
                         }
                     );
-                    If(isblankdrpDept&&isblankdrpSubDept&&isblankdrpRole&&isblankdrpEmpT&&isblanktxtProj&&isttachmentblank&&isttManachmentblank,If(
+                    If(isblankdrpDept&&isblankdrpSubDept&&isblankdrpRole&&isblankdrpEmpT&&isblanktxtProj&&isttManachmentblank,If(
                         IsError(
                             UpdateContext(
                                 {
@@ -472,7 +530,7 @@
                                                 Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                             },
-                                            'Project Specific Hiring': chkProjectSpecHiring.Value,
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
                                             'Project Name': txtProjectName.Text,
                                             'Request Status': "Draft",
                                             Comments: txtComments.Text,
@@ -481,10 +539,8 @@
                                     )
                                 }
                             );
-                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{
-                             contentBytes: First(DataCardValue_JD.Attachments).Value,
-                             name: First(DataCardValue_JD.Attachments).Name
-                         });
+                            ForAll(DataCardValue_JD.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}));
+                           Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
                         ),
                        
@@ -620,7 +676,7 @@
                                                 Id: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BID',
                                                 Value: drpEmployeeType.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BEmploymentType'
                                             },
-                                            'Project Specific Hiring': chkProjectSpecHiring.Value,
+                                            ProjectSpecificHiring: chkProjectSpecHiring.Value,
                                             'Project Name': txtProjectName.Text,
                                             'Request Status': "Draft",
                                             Comments: txtComments.Text,
