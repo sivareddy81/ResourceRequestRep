@@ -354,8 +354,8 @@
                     OnSelect: |-
                         =Select(Parent);Download("https://inva11.sharepoint.com/sites/InvaDev/_layouts/download.aspx?SourceUrl="&ThisItem.AbsoluteUri);
                     Width: =340
-                    X: =46
-                    Y: =11
+                    X: =6
+                    Y: =8
                     ZIndex: =8
 
         DataCard10_2 As dataCard.blankCard:
