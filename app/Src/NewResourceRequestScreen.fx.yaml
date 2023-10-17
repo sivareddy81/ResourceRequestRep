@@ -274,6 +274,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
+                Visible: =false
                 Width: =579
                 X: =305
                 Y: =27
@@ -298,9 +299,8 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
-                Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0
-                Width: =454
-                X: =898
+                Width: =907
+                X: =305
                 Y: =27
                 ZIndex: =4
 
@@ -330,6 +330,7 @@
                     OnSelect: |-
                         =Set(removed,Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles.Run(editViewItem).result);
                         If(removed="Yes",Notify("File was deleted permanently.",NotificationType.Success);Refresh(ResourceRequest));
+                    Visible: =false
                     Width: =15
                     X: =402
                     Y: =15
@@ -539,7 +540,7 @@
                                     )
                                 }
                             );
-                            ForAll(DataCardValue_JD.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}));
+                            //ForAll(DataCardValue_JD.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}));
                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{contentBytes:ThisRecord.Value,name:ThisRecord.Name}))
                         ),
@@ -685,10 +686,11 @@
                                     )
                                 }
                             );
-                            If(CountRows(DataCardValue_JD.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
+                            /*If(CountRows(DataCardValue_JD.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
                              contentBytes: First(DataCardValue_JD.Attachments).Value,
                              name: First(DataCardValue_JD.Attachments).Name
-                            }}));
+                            }}));*/
+                            Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                     ForAll(DataCardValue_Manager.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}))
                         ),
                        
