@@ -484,7 +484,7 @@
                 DisplayMode: =If(formMode="edit",DisplayMode.Edit,DisplayMode.Disabled)
                 Height: =130
                 Mode: =TextMode.MultiLine
-                Width: =921
+                Width: =1033
                 X: =299
                 Y: =40
                 ZIndex: =2

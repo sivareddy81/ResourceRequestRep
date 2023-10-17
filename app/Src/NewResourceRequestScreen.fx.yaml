@@ -299,7 +299,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
-                Width: =907
+                Width: =1023
                 X: =305
                 Y: =27
                 ZIndex: =4
@@ -377,7 +377,7 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Width: =921
+                Width: =1025
                 X: =299
                 Y: =30
                 ZIndex: =2
@@ -414,7 +414,7 @@
                 Default: =
                 Height: =130
                 Mode: =TextMode.MultiLine
-                Width: =921
+                Width: =1023
                 X: =299
                 Y: =40
                 ZIndex: =2
