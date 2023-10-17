@@ -156,6 +156,7 @@
             drpRole As dropdown:
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: ="Select Role"
+                DisplayMode: =If(drpDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BDepartmentName'<>"Select Department"&&IsBlank(drpSubDepartment.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BSubDepartmentName'),DisplayMode.Edit,DisplayMode.Disabled)
                 Items: =colJobRoles
                 Width: =320
                 X: =299
@@ -274,9 +275,9 @@
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: ="Upload files"
-                Visible: =false
-                Width: =579
-                X: =305
+                Visible: =CountRows(LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments)=0
+                Width: =1011
+                X: =317
                 Y: =27
                 ZIndex: =2
 
@@ -299,8 +300,9 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
-                Width: =1023
-                X: =305
+                Visible: =CountRows(LookUp(JobRole,Role=drpRole.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments)>0
+                Width: =1011
+                X: =317
                 Y: =27
                 ZIndex: =4
 
