@@ -1554,19 +1554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.OnStart"
+                  "fullyQualifiedName": "HomeScreen.OnVisible"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.OnStart",
+                  "fullyQualifiedName": "HomeScreen.OnVisible",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "OnStart",
-                "module": "App",
-                "type": "App"
+                "member": "OnVisible",
+                "module": "HomeScreen",
+                "type": "HomeScreen"
               }
             }
           ],
@@ -1727,7 +1727,7 @@
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Limit the data collected from the data source by updating the formula \"ClearCollect(colGalHomeScreen, ResourceRequest)\" to include a filtering function, such as 'Filter' or 'Search'."
+                  "Limit the data collected from the data source by updating the formula \"ClearCollect(colGalResourceRequest, ResourceRequest)\" to include a filtering function, such as 'Filter' or 'Search'."
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",

@@ -1,4 +1,5 @@
 "HomeScreen As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =ClearCollect(colGalResourceRequest,ResourceRequest)
 
     HomeCanvas As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -101,7 +102,7 @@
             GalleryResourceReqests As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =381
-                Items: =colGalHomeScreen
+                Items: =colGalResourceRequest
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplateSize: =56

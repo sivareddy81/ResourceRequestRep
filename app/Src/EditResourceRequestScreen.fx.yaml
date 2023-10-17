@@ -158,6 +158,7 @@
                 ZIndex: =5
 
             drpRole_2 As dropdown:
+                AllowEmptySelection: =true
                 ChevronBackground: =RGBA(0, 18, 107, 1)
                 Default: =LookUp(ResourceRequest,ID=editViewItem,'Job Role').Value
                 DisplayMode: =If(formMode="edit",DisplayMode.Edit,DisplayMode.Disabled)
@@ -284,6 +285,7 @@
                 PaddingTop: =5
                 Reset: =true
                 Tooltip: ="Upload files"
+                Visible: =false
                 Width: =555
                 X: =305
                 Y: =27
@@ -302,14 +304,14 @@
                 BorderThickness: =1
                 DelayItemLoading: =true
                 Height: =210
-                Items: =LookUp(ResourceRequest,ID=editViewItem).Attachments
+                Items: =LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').Attachments
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =52
                 Visible: =CountRows(LookUp(ResourceRequest,ID=editViewItem).Attachments)>0
-                Width: =454
-                X: =872
+                Width: =1021
+                X: =305
                 Y: =27
                 ZIndex: =4
 
@@ -339,7 +341,7 @@
                     OnSelect: |-
                         =Set(removed,Dev_Inva1_ResourceRequest_RemoveJobDescriptionfiles.Run(editViewItem).result);
                         If(removed="Yes",Notify("File was deleted permanently.",NotificationType.Success);Refresh(ResourceRequest));
-                    Visible: =If(formMode="edit",true,false)
+                    Visible: =false//If(formMode="edit",true,false)
                     Width: =15
                     X: =402
                     Y: =15
@@ -639,7 +641,7 @@
                                         )
                                     }
                                 );
-                                If(
+                                /*If(
                                     CountRows(DataCardValue_JD_1.Attachments) > 0,
                                     Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(
                                         recentItem.ID,
@@ -649,7 +651,8 @@
                                             name: First(DataCardValue_JD_1.Attachments).Name
                                         }
                                     )
-                                );
+                                );*/
+                                 Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                                 ForAll(
                                     DataCardValue_Manager_1.Attachments,
                                     Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(
@@ -817,10 +820,11 @@
                                     )
                                 }
                             );
-                            If(CountRows(DataCardValue_JD_1.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
+                            /*If(CountRows(DataCardValue_JD_1.Attachments)>0,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"JD",{file:{
                              contentBytes: First(DataCardValue_JD_1.Attachments).Value,
                              name: First(DataCardValue_JD_1.Attachments).Name
-                            }}));
+                            }}));*/
+                             Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles_based_On_Role.Run(recentItem.ID,LookUp(JobRole,Role=drpRole_2.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BRole').ID);
                     ForAll(DataCardValue_Manager_1.Attachments,Dev_Inva1_ResourceRequest_UploadJobDescriptionFiles.Run(recentItem.ID,"ManagerApproval",{file:{contentBytes:ThisRecord.Value,name:ThisRecord.Name}}));
                     Refresh(ResourceRequest);
                         ),
